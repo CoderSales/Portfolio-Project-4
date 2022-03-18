@@ -6,9 +6,18 @@ In repository:
 Navigate to Documentation folder.
 
 **Files present:**
-- DEBUG md
-- LOG md
-- PLAN md
+- BUGS.md
+- CHALLENGES.md
+- DEBUG.md
+- DESIGN-DECISIONS.md
+- LOG.md
+- PLAN.md
+- REFERENCES.md
+
+### Django-Documentation (Subfolder)
+- Django-References.md
+- Steps-taken-in-setting-up-Django.md
+
 
 ## Wireframe
 Overview ![Overview](assets/images/wireframe-overview.png)
