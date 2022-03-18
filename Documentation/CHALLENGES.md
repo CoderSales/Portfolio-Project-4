@@ -7,3 +7,6 @@ Challenges to be addressed in this project:
 - Customise CSS
 - Incorporate Previous Feedback
 - Incorporate more headings into README.md
+- Query use of jQuery
+- Query use of Bootstrap
+- Check what not to mix Bootstrap with
