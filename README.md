@@ -1,3 +1,5 @@
+# Part 1 of 2: Non-stock README.md contents for Portfolio-Project-4
+
 ## Design Approach
 Mobile first
 
@@ -26,7 +28,7 @@ Mobile First Home Page ![Mobile First Home Page](assets/images/mobile-first-home
 
 Desktop Home Page ![Desktop Home Page](assets/images/desktop-home-page-compressed.png)
 
-## Stock Template
+# Part 2 of 2: Stock Template for README.md
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
