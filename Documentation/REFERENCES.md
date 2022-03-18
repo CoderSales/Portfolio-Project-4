@@ -16,3 +16,6 @@
 ## Design Decisions
 ### Django Python Framework
 - [Flask Vs Django: Which Python Framework to Choose? > Python Flask vs Django: Difference in Detail](https://www.interviewbit.com/blog/flask-vs-django/#:~:text=Django%20is%20a%20full%2Dstack,external%20libraries%20and%20minimalist%20features.)
+
+## GitHub Repositories
+- [Code-Institute-Org / gitpod-full-template](https://github.com/Code-Institute-Org/gitpod-full-template)

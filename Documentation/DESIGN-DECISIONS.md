@@ -11,3 +11,5 @@ Django 3.2 is the LTS (Long Term Support) version of Django and is therefore pre
 ## Change Templates
 Currently using Full Stack Template
 Switch to Django Template
+- [Citation: Hello Django > Getting Set Up > Getting Set Up](codeinstitute.net)
+- [Code-Institute-Org / gitpod-full-template](https://github.com/Code-Institute-Org/gitpod-full-template)
