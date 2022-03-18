@@ -7,7 +7,7 @@ Navigate to Documentation folder.
 - PLAN md
 
 ## Wireframe
-- ![!Wireframe](assets/images/wireframe-overview.png)
+![!Wireframe](assets/images/wireframe-overview.png)
 
 
 
