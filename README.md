@@ -7,7 +7,8 @@ Navigate to Documentation folder.
 - PLAN md
 
 ## Wireframe
-- [Wireframe](assets/images/wireframe-overview.png)
+- <a href="https://stackoverflow.com/"><img src="RELATIVE_PATH_TO_IMAGE></img></a>
+ [Wireframe](assets/images/wireframe-overview.png)
 
 
 
