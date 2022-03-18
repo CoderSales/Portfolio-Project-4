@@ -7,3 +7,7 @@
 ## Services Used
 ### Images
 - Service for compressing files to jpeg or png format. [TinyPNG](https://tinypng.com/)
+
+## LMS
+- Project Introduction
+- Common Agile Practices > User Stories > Create User Story Template on Github
