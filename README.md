@@ -12,7 +12,7 @@ Navigate to Documentation folder.
 ## Wireframe
 ! Overview [Overview](assets/images/wireframe-overview.png)
 
-![]()
+! Mobile First Home Page [Mobile First Home Page](assets/images/mobile-first-home-page-compressed.png)
 
 
 ## Stock Template
