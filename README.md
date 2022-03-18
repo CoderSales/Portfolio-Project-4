@@ -4,6 +4,7 @@ Mobile first
 ## Documentation (Table of Contents)
 In repository:
 Navigate to Documentation folder.
+
 **Files present:**
 - DEBUG md
 - LOG md
