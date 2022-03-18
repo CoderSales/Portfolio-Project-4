@@ -1,3 +1,6 @@
+## Name for Site
+Your Thoughts
+
 ## Use Django
 ```
 pip3 install Django==3.2
