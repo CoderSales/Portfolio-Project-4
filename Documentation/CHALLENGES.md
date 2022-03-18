@@ -5,4 +5,4 @@ Challenges to be addressed in this project:
 - Use Django
 - Use Postgres / SQL Database 
 - Customise CSS
-
+- Incorporate Previous Feedback

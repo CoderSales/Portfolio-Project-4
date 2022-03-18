@@ -14,6 +14,7 @@ Overview ![Overview](assets/images/wireframe-overview.png)
 
 Mobile First Home Page ![Mobile First Home Page](assets/images/mobile-first-home-page-compressed.png)
 
+Desktop Home Page ![Desktop Home Page](assets/images/desktop-home-page-compressed.png)
 
 ## Stock Template
 
