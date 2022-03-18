@@ -8,7 +8,7 @@ Navigate to Documentation folder.
 
 ## Wireframe
 - <a href="https://stackoverflow.com/"><img src="RELATIVE_PATH_TO_IMAGE></img></a>
- [Wireframe](assets/images/wireframe-overview.png)
+ [!Wireframe](assets/images/wireframe-overview.png)
 
 
 
