@@ -6,3 +6,4 @@ Challenges to be addressed in this project:
 - Use Postgres / SQL Database 
 - Customise CSS
 - Incorporate Previous Feedback
+- Incorporate more headings into README.md
