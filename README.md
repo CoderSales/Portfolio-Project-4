@@ -1,3 +1,6 @@
+## Design Approach
+Mobile first
+
 ## Documentation (Table of Contents)
 In repository:
 Navigate to Documentation folder.
