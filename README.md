@@ -10,9 +10,9 @@ Navigate to Documentation folder.
 - PLAN md
 
 ## Wireframe
-! Overview [Overview](assets/images/wireframe-overview.png)
+Overview ![Overview](assets/images/wireframe-overview.png)
 
-! Mobile First Home Page [Mobile First Home Page](assets/images/mobile-first-home-page-compressed.png)
+Mobile First Home Page ![Mobile First Home Page](assets/images/mobile-first-home-page-compressed.png)
 
 
 ## Stock Template
