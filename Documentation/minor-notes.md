@@ -4,6 +4,7 @@
 
 #### Correct:
 #### easy to match operators with operands
+
 ```
 income = (gross_wages
           + taxable_interest
