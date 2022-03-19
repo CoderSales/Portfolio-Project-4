@@ -52,3 +52,16 @@ venn diagram of binary operators python and bitwise operators python
 
 ## Content
 Bitwise Operators in Python ![Bitwise Operators in Python](https://data-flair.training/blogs/wp-content/uploads/sites/2/2018/01/Bitwise-Operators-in-Python.jpg)
+
+
+## Search String
+binary bitwise operators
+
+## Result
+- [Binary > Bitwise Operators](https://learn.sparkfun.com/tutorials/binary/bitwise-operators#:~:text=Bitwise%20operators%20perform%20functions%20bit,throughout%20both%20electronics%20and%20programming.)
+
+## Content
+
+```
+Bitwise operators perform functions bit-by-bit on either one or two full binary numbers. They make use of boolean logic operating on a group of binary symbols. These bitwise operators are widely used throughout both electronics and programming.
+```
