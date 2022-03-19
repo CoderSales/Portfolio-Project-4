@@ -89,3 +89,8 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
   File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
 ModuleNotFoundError: No module named 'todo'
+
+## Reason for Bug
+As swapped from following Django Documentation to video:
+Docs give install todo sooner than video
+hence this error
