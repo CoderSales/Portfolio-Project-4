@@ -1,4 +1,5 @@
 ## Unresolved Bugs
+### Terminal Bash Error 1
 Terminal Bash in Gitpod Shows the following two blocks:
 
 ```
@@ -36,3 +37,17 @@ Error: connect ECONNREFUSED 127.0.0.1:23000
 }
 gitpod /workspace/Portfolio-Project-4 
 ```
+
+### Line length Bug
+Line length exceeded in python
+- line break not working
+ using / \ \n
+ not tried () parentheses
+- next steps would be:
+  - find out what binary operator is 
+  - and is it the same as bitwise operator
+  - cannot determine if interchangeable
+    - in this case
+
+#### Decision
+  - suspend debugging for now
