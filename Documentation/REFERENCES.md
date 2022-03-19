@@ -19,3 +19,6 @@
 
 ## GitHub Repositories
 - [Code-Institute-Org / gitpod-full-template](https://github.com/Code-Institute-Org/gitpod-full-template)
+
+## Syntax
+- [Python Line Break: How To Print Line Break](https://appdividend.com/2021/06/04/python-line-break/#:~:text=tutorial%20in%20detail.-,Python%20line%20break,parentheses%2C%20brackets%2C%20and%20braces.)
