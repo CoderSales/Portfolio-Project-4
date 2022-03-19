@@ -1,0 +1,1 @@
+Swap to progressing using LMS versus (or supplemented by) Django Documentation
