@@ -1,4 +1,4 @@
-## Search terms
+## Search sstring
 python binary operators
 
 ## Results
@@ -29,5 +29,17 @@ Does a "bitwise exclusive or". Each bit of the output is the same as the corresp
 
 ```
 Operators are used to perform operations on values and variables. These are the special symbols that carry out arithmetic and logical computations. The value the operator operates on is known as Operand. 
+```
+
+## Search string
+are bitwise operators binary operators in python same thing
+
+## Result
+- [Bitwise Operators in Python > Overview of Python’s Bitwise Operators](https://realpython.com/python-bitwise-operators/#:~:text=Most%20of%20the%20bitwise%20operators,it%20expects%20just%20one%20operand.)
+
+## Content
+
+```
+Most of the bitwise operators are binary, which means that they expect two operands to work with, typically referred to as the left operand and the right operand. Bitwise NOT ( ~ ) is the only unary bitwise operator since it expects just one operand.
 ```
 
