@@ -22,3 +22,4 @@ In Python code, it is permissible to break before or after a binary operator, as
 - Need to use .. operator (to cd up out of Documentation folder)
 - add forward slash "/"
 - then add relative file path
+- ensure in format of ![]()
