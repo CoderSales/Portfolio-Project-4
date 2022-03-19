@@ -21,4 +21,13 @@ Does a "bitwise or". Each bit of the output is 0 if the corresponding bit of x A
 Returns the complement of x - the number you get by switching each 1 for a 0 and each 0 for a 1. This is the same as -x - 1.
 #### x ^ y
 Does a "bitwise exclusive or". Each bit of the output is the same as the corresponding bit in x if that bit in y is 0, and it's the complement of the bit in x if that bit in y is 1.
+
+## Result 2
+- [Python Bitwise Operators](https://www.geeksforgeeks.org/python-bitwise-operators/)
+
+## Content
+
 ```
+Operators are used to perform operations on values and variables. These are the special symbols that carry out arithmetic and logical computations. The value the operator operates on is known as Operand. 
+```
+
