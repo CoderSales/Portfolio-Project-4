@@ -14,3 +14,6 @@ necessary to expose PORT 8000
 - run command:
     - `python3 manage.py runserver`
         - same error no todo
+            - created GitHub issue 
+                per automated light bulb recommendation
+                in Visual Studio Code
