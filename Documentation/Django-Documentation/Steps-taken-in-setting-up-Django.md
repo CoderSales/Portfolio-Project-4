@@ -60,3 +60,11 @@ whereas the previous was a Django command,
 so possibly the same restrictions do not apply,
 however, for simplicity, speed, and progress to be made,
 the naming convention will be maintained.
+
+##### * To run the server 
+(Step after 3 in Hello Django Documentation)
+
+```
+python3 manage.py runserver
+```
+
