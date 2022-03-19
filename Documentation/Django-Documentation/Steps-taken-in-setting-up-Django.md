@@ -78,3 +78,8 @@ INSTALLED_APPS = [
     'todo', <-- new code added -->
 ]
 
+## Ran migration code per terminal message
+
+```
+python manage.py migrate
+```
