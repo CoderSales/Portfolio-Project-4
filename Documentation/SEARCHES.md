@@ -43,3 +43,12 @@ are bitwise operators binary operators in python same thing
 Most of the bitwise operators are binary, which means that they expect two operands to work with, typically referred to as the left operand and the right operand. Bitwise NOT ( ~ ) is the only unary bitwise operator since it expects just one operand.
 ```
 
+
+## Search String
+venn diagram of binary operators python and bitwise operators python
+
+## Result
+- [https://data-flair.training/blogs/wp-content/uploads/sites/2/2018/01/Bitwise-Operators-in-Python.jpg](https://data-flair.training/blogs/wp-content/uploads/sites/2/2018/01/Bitwise-Operators-in-Python.jpg)
+
+## Content
+Bitwise Operators in Python ![Bitwise Operators in Python](https://data-flair.training/blogs/wp-content/uploads/sites/2/2018/01/Bitwise-Operators-in-Python.jpg)
