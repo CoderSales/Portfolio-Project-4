@@ -68,3 +68,13 @@ the naming convention will be maintained.
 python3 manage.py runserver
 ```
 
+## In django_todo / settings.py:
+
+### #4 Add your app to INSTALLED APPS
+
+INSTALLED_APPS = [
+    ...
+    'django.contrib.staticfiles',
+    'todo', <-- new code added -->
+]
+
