@@ -22,3 +22,4 @@
 
 ## Syntax
 - [How can I do a line break (line continuation) in Python?](https://stackoverflow.com/questions/53162/how-can-i-do-a-line-break-line-continuation-in-python)
+- [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/)
