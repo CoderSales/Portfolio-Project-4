@@ -16,3 +16,9 @@ income = (gross_wages
 
 In Python code, it is permissible to break before or after a binary operator, as long as the convention is consistent locally. For new code Knuth’s style is suggested.
 
+## Adding image of Django running in Browser to DEVELOPMENT.md
+- Need to make sure no spaces between square and round brackets
+- Need to use relative path to image
+- Need to use .. operator (to cd up out of Documentation folder)
+- add forward slash "/"
+- then add relative file path
