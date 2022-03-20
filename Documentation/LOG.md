@@ -115,6 +115,7 @@ python3 manage.py runserver
 - go to the admin panel
     - Note Posts table now shows under YOUR_THOUGHTS
 - add 2 users and comments via server GUI in Browser
+- open db.sqlite3 file in in-built TextEditor (does not display properly)
 - Visual Studio Code advises there are extensions available in Marketplace to help when dealing with sqlite files
 - click Find in Marketplace
 - automatically search for extension using search string ext:sqlite3 in Marketplace
