@@ -186,4 +186,5 @@ Although unresolved,
 when server view of admin page
 in Browser is refreshed
 Posts now display 
-names of Users instead of generic values as before.
+names of Users instead of generic values as before,
+as required.
