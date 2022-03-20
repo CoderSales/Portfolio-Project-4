@@ -1,5 +1,5 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
-def hello_world(user_request):
-    return HttpResponse("Hello")
+def get_comment(user_request):
+    return render(user_request, 'Your_Thoughts/comment-page.html')
