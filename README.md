@@ -28,6 +28,11 @@ Mobile First Home Page ![Mobile First Home Page](assets/images/mobile-first-home
 
 Desktop Home Page ![Desktop Home Page](assets/images/desktop-home-page-compressed.png)
 
+## Elements of Website
+- Django
+- login
+
+
 # Part 2 of 2: Stock Template for README.md
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
