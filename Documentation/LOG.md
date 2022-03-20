@@ -17,3 +17,20 @@ necessary to expose PORT 8000
             - created GitHub issue 
                 per automated light bulb recommendation
                 in Visual Studio Code
+
+## Run Terminal Command
+
+```
+python3 manage.py makemigrations --dry-run
+```
+
+```
+python3 manage.py makemigrations
+```
+
+This adds the following file to migrations
+
+```
+0001_initial.py
+```
+
