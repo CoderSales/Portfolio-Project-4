@@ -91,4 +91,22 @@ Running migrations:
   Applying Your_Thoughts.0001_initial... OK
 ```
 
+## Next Step
 
+- Open admin.py
+
+- Add these lines:
+
+```
+from .models import Post
+
+admin.sit.register(Post)
+```
+
+### Then in terminal
+
+Run
+
+```
+python3 manage.py runserver
+```

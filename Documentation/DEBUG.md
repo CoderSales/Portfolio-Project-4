@@ -111,3 +111,67 @@ with open('/path/to/some/file/you/want/to/read') as file_1, \
 
 - Break lines
 - Resolve pylint Problem
+
+## no attribute 'sit' in admin.py Bug [Resolved]
+
+### Summary of error (post resolution)
+`AttributeError: module 'django.contrib.admin' has no attribute 'sit' in admin.py`
+
+### Terminal output
+gitpod /workspace/Portfolio-Project-4 (main) $ python3 manage.py runserver
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 110, in inner_run
+    autoreload.raise_last_exception()
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/core/management/__init__.py", line 375, in execute
+    autoreload.check_errors(django.setup)()
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/apps/registry.py", line 122, in populate
+    app_config.ready()
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/contrib/admin/apps.py", line 27, in ready
+    self.module.autodiscover()
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/contrib/admin/__init__.py", line 24, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/utils/module_loading.py", line 47, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/workspace/Portfolio-Project-4/Your_Thoughts/admin.py", line 4, in <module>
+    admin.sit.register(Post)
+AttributeError: module 'django.contrib.admin' has no attribute 'sit'
+
+## Search String
+AttributeError: module 'django.contrib.admin' has no attribute 'sit'
+
+## Result
+- [In django i got AttributeError: module 'django.contrib.admin' has no attribute 'display'](https://stackoverflow.com/questions/67418161/in-django-i-got-attributeerror-module-django-contrib-admin-has-no-attribute)
+
+## Actions
+- Answer not found in above Reference
+- Reread end of error, including line before last line (which was used as search string)
+
+```
+  File "/workspace/Portfolio-Project-4/Your_Thoughts/admin.py", line 4, in <module>
+    admin.sit.register(Post)
+```
+
+- Edited `sit` to `site` in admin.py
+- correction above allowed server launch without rerunning terminal commands
