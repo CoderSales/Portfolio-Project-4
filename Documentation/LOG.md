@@ -120,3 +120,4 @@ python3 manage.py runserver
 - click Find in Marketplace
 - automatically search for extension using search string ext:sqlite3 in Marketplace
 - Install SQLite
+- Reopen db.sqlite3 file in in-built TextEditor (still does not display properly)
