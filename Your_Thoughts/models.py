@@ -1,6 +1,12 @@
+"""
+import models
+"""
 from django.db import models
 
+
 # Create your models here.
+
+
 class Post(models.Model):
     # https://stackoverflow.com/questions/7877522/how-do-i-disable-missing-docstring-warnings-at-a-file-level-in-pylint
     """
