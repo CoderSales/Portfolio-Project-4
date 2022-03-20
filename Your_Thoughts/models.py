@@ -18,3 +18,6 @@ class Post(models.Model):
     # created_date = models.DateTimeField(default=timezone.now)
     # LMS
     done = models.BooleanField(null=False, blank=False, default=False)
+
+    def __str__(self):
+        return self.name
