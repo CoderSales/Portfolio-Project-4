@@ -23,3 +23,12 @@ In Python code, it is permissible to break before or after a binary operator, as
 - add forward slash "/"
 - then add relative file path
 - ensure in format of ![]()
+
+## From LMS video 2
+todo is related to template project
+here this would 
+roughly translate to 
+either
+Profile_Project_4
+or
+Your_Thoughts
