@@ -174,3 +174,9 @@ Add code to bottom inside last curly bracket `}`
 ### Unresolved
 Bug still persists
 
+# New Bug
+in models.py 
+str (for string)
+has a Problem in console
+that it does not return
+a string
