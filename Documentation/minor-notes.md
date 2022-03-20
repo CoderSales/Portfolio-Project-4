@@ -26,9 +26,5 @@ In Python code, it is permissible to break before or after a binary operator, as
 
 ## From LMS video 2
 todo is related to template project
-here this would 
-roughly translate to 
-either
+here this translates to 
 Profile_Project_4
-or
-Your_Thoughts
