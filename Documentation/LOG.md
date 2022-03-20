@@ -121,3 +121,6 @@ python3 manage.py runserver
 - automatically search for extension using search string ext:sqlite3 in Marketplace
 - Install SQLite
 - Reopen db.sqlite3 file in in-built TextEditor (still does not display properly)
+
+# Next step
+Make name comment display on admin page in Browser. 
