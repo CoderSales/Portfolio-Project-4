@@ -37,8 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'todo',  # added per step in part 1 #4
-
+    'Your_Thoughts'
 ]
 
 MIDDLEWARE = [
