@@ -118,4 +118,4 @@ python3 manage.py runserver
 - Visual Studio Code advises there are extensions available in Marketplace to help when dealing with sqlite files
 - click Find in Marketplace
 - automatically search for extension using search string ext:sqlite3 in Marketplace
-- Insttall SQLite
+- Install SQLite
