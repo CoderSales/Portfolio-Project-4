@@ -65,3 +65,59 @@ binary bitwise operators
 ```
 Bitwise operators perform functions bit-by-bit on either one or two full binary numbers. They make use of boolean logic operating on a group of binary symbols. These bitwise operators are widely used throughout both electronics and programming.
 ```
+
+## Search String
+```how to add comment field django models```
+
+## Result
+- [Homework: create comment model](https://tutorial-extensions.djangogirls.org/en/homework_create_more_models)
+
+## Content
+
+Creating comment blog model
+Let's open blog/models.py and append this piece of code to the end of file:
+
+```
+class Comment(models.Model):
+    post = models.ForeignKey('blog.Post', on_delete=models.CASCADE, related_name='comments')
+    author = models.CharField(max_length=200)
+    text = models.TextField()
+    created_date = models.DateTimeField(default=timezone.now)
+    approved_comment = models.BooleanField(default=False)
+
+    def approve(self):
+        self.approved_comment = True
+        self.save()
+
+    def __str__(self):
+        return self.text
+```
+
+You can go back to the Django models chapter in the tutorial if you need a refresher on what each of the field types mean.
+
+## Search String
+
+```
+Missing class docstringpylint(missing-class-docstring)
+```
+
+## Result
+- [How do I disable "missing docstring" warnings at a file-level in Pylint?](https://stackoverflow.com/questions/7877522/how-do-i-disable-missing-docstring-warnings-at-a-file-level-in-pylint)
+
+## Content
+
+```
+It is nice for a Python module to have a docstring, explaining what the module does, what it provides, examples of how to use the classes.
+```
+
+```
+So I suggest adding that small missing docstring, saying something like:
+
+"""
+high level support for doing this and that.
+"""
+
+Soon enough, you'll be finding useful things to put in there, such as providing examples of how to use the various classes / functions of the module which do not necessarily belong to the individual docstrings of the classes / functions (such as how these interact, or something like a quick start guide).
+
+```
+

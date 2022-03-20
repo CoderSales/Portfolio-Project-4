@@ -23,3 +23,11 @@
 ## Syntax
 - [How can I do a line break (line continuation) in Python?](https://stackoverflow.com/questions/53162/how-can-i-do-a-line-break-line-continuation-in-python)
 - [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/)
+
+## Django References
+### Django fields
+- [Homework: create comment model](https://tutorial-extensions.djangogirls.org/en/homework_create_more_models)
+
+### add doc string to Python module to stop Pylint linter error
+[How do I disable "missing docstring" warnings at a file-level in Pylint?+++
+](https://stackoverflow.com/questions/7877522/how-do-i-disable-missing-docstring-warnings-at-a-file-level-in-pylint)
