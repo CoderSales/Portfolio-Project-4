@@ -180,3 +180,10 @@ str (for string)
 has a Problem in console
 that it does not return
 a string
+
+## Status
+Although unresolved,
+when server view of admin page
+in Browser is refreshed
+Posts now display 
+names of Users instead of generic values as before.
