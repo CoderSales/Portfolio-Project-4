@@ -1,3 +1,7 @@
+"""
+import and register models
+"""
+
 from django.contrib import admin
 from .models import Post
 # Register your models here.
