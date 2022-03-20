@@ -12,8 +12,49 @@ Line 476
 ### Relevance
 
 Shows `Model` method defined in the base Django model class
+- (in django.db.models.base)
 
 ```
 class Model(metaclass=ModelBase):
 ```
 
+#### Part 2:
+
+##### Bookmark
+Lines 607-608
+
+##### Content
+
+```
+    def __str__(self):
+        return "%s object (%s)" % (self.__class__.__name__, self.pk)
+
+```
+
+##### Relevance
+
+Adapted quotation from LMS video 6
+"""
+- The Post object value in the admin
+is coming from the fact that we 
+inherited the base Django 
+model class, 
+when we created our Post model.
+
+- By default,
+all models that inherit this base model class
+will use its built in string method
+to display their class name 
+followed by the word object.
+
+- Just so that there's sort of a generic way
+to display them.
+
+- see this method defined above 
+"""
+
+...
+
+string method above returns object and then the 
+primary key,
+so that's what we see in the admin panel
