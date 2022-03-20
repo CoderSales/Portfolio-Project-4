@@ -53,7 +53,7 @@ venn diagram of binary operators python and bitwise operators python
 ## Content
 Bitwise Operators in Python ![Bitwise Operators in Python](https://data-flair.training/blogs/wp-content/uploads/sites/2/2018/01/Bitwise-Operators-in-Python.jpg)
 
-
+# New
 ## Search String
 binary bitwise operators
 
@@ -66,6 +66,7 @@ binary bitwise operators
 Bitwise operators perform functions bit-by-bit on either one or two full binary numbers. They make use of boolean logic operating on a group of binary symbols. These bitwise operators are widely used throughout both electronics and programming.
 ```
 
+# New
 ## Search String
 ```how to add comment field django models```
 
@@ -95,6 +96,7 @@ class Comment(models.Model):
 
 You can go back to the Django models chapter in the tutorial if you need a refresher on what each of the field types mean.
 
+# New
 ## Search String
 
 ```
@@ -121,3 +123,31 @@ Soon enough, you'll be finding useful things to put in there, such as providing 
 
 ```
 
+# New
+## Search String
+
+```
+break python line after dot
+```
+
+## Result
+- [Correct style for line breaks when chaining methods in Python](https://stackoverflow.com/questions/7942586/correct-style-for-line-breaks-when-chaining-methods-in-python)
+
+## Content
+
+```
+PEP 8 recommends using parenthesis so that you don't need \, and gently suggests breaking before binary operators instead of after them. Thus, the preferred way of formatting you code is like this:
+
+my_var = (somethinglikethis
+          .where(we=do_things)
+          .where(we=domore)
+          .where(we=everdomore))
+The two relevant passages are this one from the Maximum Line Length section:
+
+The preferred way of wrapping long lines is by using Python's implied line continuation inside parentheses, brackets and braces. Long lines can be broken over multiple lines by wrapping expressions in parentheses. These should be used in preference to using a backslash for line continuation.
+
+... and the entire Should a line break before or after a binary operator? section:
+
+Should a line break before or after a binary operator?
+For decades the recommended style was to break after binary operators. But this can hurt readability in two ways: the operators tend to get scattered across different columns on the screen, and each operator is moved away from its operand and onto the previous line.
+```

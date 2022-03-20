@@ -85,3 +85,29 @@ Step 11: Went bacck to
         Clicked to Open Browser
 Step 12: Server opened,
         showed running in Browser
+
+# New
+## Line Length Bug [Resolved]
+
+### Search String
+
+`line too long (91 > 79 characters)flake8(E501)`
+
+### Results
+- [Line too long (82 &gt; 79 characters) (E501)](https://www.flake8rules.com/rules/E501.html)
+- [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/#maximum-line-length)
+
+### Content
+
+```
+Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that case:
+
+with open('/path/to/some/file/you/want/to/read') as file_1, \
+     open('/path/to/some/file/being/written', 'w') as file_2:
+    file_2.write(file_1.read())
+```
+
+### Action
+
+- Break lines
+- Resolve pylint Problem
