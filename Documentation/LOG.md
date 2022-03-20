@@ -110,3 +110,7 @@ Run
 ```
 python3 manage.py runserver
 ```
+
+- resolve no attribute 'sit' in admin.py Bug [Resolved]
+- go to the admin panel
+    - Note Posts table now shows under YOUR_THOUGHTS
