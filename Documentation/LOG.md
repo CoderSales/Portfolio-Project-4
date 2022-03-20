@@ -114,3 +114,8 @@ python3 manage.py runserver
 - resolve no attribute 'sit' in admin.py Bug [Resolved]
 - go to the admin panel
     - Note Posts table now shows under YOUR_THOUGHTS
+- add 2 users and comments via server GUI in Browser
+- Visual Studio Code advises there are extensions available in Marketplace to help when dealing with sqlite files
+- click Find in Marketplace
+- automatically search for extension using search string ext:sqlite3 in Marketplace
+- Insttall SQLite
