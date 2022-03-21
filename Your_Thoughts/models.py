@@ -14,14 +14,14 @@ class Post(models.Model):
     """
     name = models.CharField(max_length=50, null=False, blank=False)
     # https://tutorial-extensions.djangogirls.org/en/homework_create_more_models
-    comment = models.TextField(null=False, blank=False)
+    author = models.ForeignKey(null=False, blank=False)
     # created_date = models.DateTimeField(default=timezone.now)
     # LMS
-    done = models.BooleanField(null=False, blank=False, default=False)
+    date = models.BooleanField(null=False, blank=False, default=False)
 
     # Note:
     # in
     # PROBLEMS in Console View
     # __str__ does not return str
     def __str__(self):
-        return self.name, self.comment
+        return self.name
