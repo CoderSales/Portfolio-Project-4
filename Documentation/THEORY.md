@@ -22,3 +22,7 @@ except its looking for things like:
 - bad coding practices
 and
 - packages we're importing that we're not using"
+
+Fixing Problems is not critical to our project,
+but it is good practice in professional software development
+to follow industry standard guidelines.
