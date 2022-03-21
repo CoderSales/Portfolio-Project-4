@@ -14,10 +14,10 @@ class Post(models.Model):
     """
     name = models.CharField(max_length=50, null=False, blank=False)
     # https://tutorial-extensions.djangogirls.org/en/homework_create_more_models
-    author = models.ForeignKey(null=False, blank=False)
+    comment = models.TextField(null=False, blank=False)
     # created_date = models.DateTimeField(default=timezone.now)
     # LMS
-    date = models.BooleanField(null=False, blank=False, default=False)
+    done = models.BooleanField(null=False, blank=False, default=False)
 
     # Note:
     # in

@@ -8,5 +8,14 @@
 </head>
 <body>
     <h1>Comment</h1>
-    {% for post in posts %}{{post.name}} {% endfor %}</body>
+    <table>
+        {% for post in posts %}
+        <tr>
+            <td>{{ post.name }}</td>
+            <td>{{ post.done }}</td>
+        </tr>
+    {{post.name}}
+    {% endfor %}
+    </table>
+</body>
 </html>
