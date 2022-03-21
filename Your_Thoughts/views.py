@@ -19,5 +19,5 @@ def add_post(user_request):
         done = 'done' in user_request.POST
         Post.objects.create(name=name, done=done)
 
-        return redirect('get_todo_list')
+        return redirect('get_comment')
     return render(user_request, 'Your_Thoughts/add_post.html')
