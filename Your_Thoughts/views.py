@@ -1,11 +1,17 @@
+"""
+sets out the views for Django website user
+"""
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Post
 from .forms import PostForm
 
 
-
 # Create your views here.
 def get_comment(user_request):
+    """
+    sets out how to get comment passing in user_request
+    """
+
     print("hello")
     posts = Post.objects.all()
     context = {
@@ -16,6 +22,10 @@ def get_comment(user_request):
 
 
 def add_post(user_request):
+    """
+    sets out how to add a post
+    """
+
     if user_request.method == 'POST':
         form = PostForm(user_request.POST)
         if form.is_valid():
@@ -29,6 +39,10 @@ def add_post(user_request):
 
 
 def edit_post(user_request, post_id):
+    """
+    sets out how the user can edit a post
+    """
+
     post = get_object_or_404(Post, id=post_id)
     if user_request.method == 'POST':
         form = PostForm(user_request.POST, instance=post)
