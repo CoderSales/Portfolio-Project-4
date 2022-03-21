@@ -11,3 +11,7 @@ def get_comment(user_request):
     }
     # print(posts)
     return render(user_request, 'Your_Thoughts/comment-page.html', context)
+
+
+def add_comment(user_request):
+    return render(user_request, 'Your_Thoughts/add_post.html')

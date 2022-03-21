@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Your_Thoughts.views import get_comment
+from Your_Thoughts.views import get_comment, add_comment
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', get_comment, name='get_comment')
+    path('', get_comment, name='get_comment'),
+    path('add', add_comment, name='add')
 ]
