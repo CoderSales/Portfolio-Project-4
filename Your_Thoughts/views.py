@@ -57,6 +57,10 @@ def edit_post(user_request, post_id):
 
 
 def toggle_post(user_request, post_id):
+    """
+    add toggle functionality from done to not
+    """
+
     post = get_object_or_404(Post, id=post_id)
     post.done = not post.done
     post.save()
@@ -64,6 +68,10 @@ def toggle_post(user_request, post_id):
 
 
 def delete_post(user_request, post_id):
+    """
+    add delete button for post
+    """
+
     post = get_object_or_404(Post, id=post_id)
     post.delete()
     return redirect('get_comment')
