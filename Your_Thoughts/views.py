@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Post
 from .forms import PostForm
 
@@ -26,3 +26,17 @@ def add_post(user_request):
         'form': form
     }
     return render(user_request, 'Your_Thoughts/add_post.html', context)
+
+
+def edit_post(user_request, post_id):
+    post = get_object_or_404(Post, id=post_id)
+    if user_request.method == 'POST':
+        form = PostForm(user_request.POST, instance=post)
+        if form.is_valid():
+            form.save()
+            return redirect('get_comment')
+    form = PostForm(instance=post)
+    context = {
+        'form': form
+    }
+    return render(user_request, 'Your_Thoughts/edit_post.html', context)
