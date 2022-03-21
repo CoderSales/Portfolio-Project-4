@@ -11,10 +11,14 @@
     <table>
         {% for post in posts %}
         <tr>
-            <td>{{ post.name }}</td>
-            <td>{{ post.done }}</td>
+            {% if post.done %}
+                <td><strike>{{  post.name  }}</strike></td>
+            {% else%}
+                <td>{{  post.name  }}</td>
+            {% endif %}
         </tr>
-    {{post.name}}
+        {% empty %}
+        <tr><td>You have no new posts.</td></tr>
     {% endfor %}
     </table>
 </body>
