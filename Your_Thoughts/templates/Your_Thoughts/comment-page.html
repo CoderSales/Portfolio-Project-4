@@ -17,8 +17,18 @@
                 <td>{{  post.name  }}</td>
             {% endif %}
             <td>
+                <a href="/toggle/{{ post.id }}">
+                    <button>Toggle</button>
+                </a>
+            </td>
+            <td>
                 <a href="/edit/{{ post.id }}">
                     <button>Edit</button>
+                </a>
+            </td>
+            <td>
+                <a href="/delete/{{ post.id }}">
+                    <button>Delete</button>
                 </a>
             </td>
         </tr>

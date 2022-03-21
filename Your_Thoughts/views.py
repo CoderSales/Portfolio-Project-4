@@ -54,3 +54,16 @@ def edit_post(user_request, post_id):
         'form': form
     }
     return render(user_request, 'Your_Thoughts/edit_post.html', context)
+
+
+def toggle_post(user_request, post_id):
+    post = get_object_or_404(Post, id=post_id)
+    post.done = not post.done
+    post.save()
+    return redirect('get_comment')
+
+
+def delete_post(user_request, post_id):
+    post = get_object_or_404(Post, id=post_id)
+    post.delete()
+    return redirect('get_comment')
