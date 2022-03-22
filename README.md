@@ -33,6 +33,16 @@ Desktop Home Page ![Desktop Home Page](assets/images/desktop-home-page-compresse
 - login
 
 
+## Design Thinking and Agile Approach
+(LMS Reference: Django Blog 002: Project Prerequisites)
+
+- Content important
+- Easy signup
+- Easy to engage
+
+- Problem statement:
+How to develop a blog application that provides this functionality to the useer?
+
 # Part 2 of 2: Stock Template for README.md
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
