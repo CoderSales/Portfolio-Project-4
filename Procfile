@@ -1,0 +1,1 @@
+web: gunicorn Profile_Project_4.wsgi:application
