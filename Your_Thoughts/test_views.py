@@ -39,3 +39,12 @@ class TestViews(TestCase):
         self.assertRedirects(user_response, '/')
         updated_post = Post.objects.get(id=post.id)
         self.assertFalse(updated_post.done)
+
+    def test_can_edit_Post(self):
+        post = Post.objects.create(name='Test Post')
+        user_response = self.client.post(f'/edit/{post.id}', {'name': 'Updated Name'})
+        self.assertRedirects(user_response, '/')
+        updated_post = Post.objects.get(id=post.id)
+        self.assertEqual(updated_post.name, 'Updated Name')
+
+
