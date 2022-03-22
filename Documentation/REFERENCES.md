@@ -29,5 +29,4 @@
 - [Homework: create comment model](https://tutorial-extensions.djangogirls.org/en/homework_create_more_models)
 
 ### add doc string to Python module to stop Pylint linter error
-[How do I disable "missing docstring" warnings at a file-level in Pylint?+++
-](https://stackoverflow.com/questions/7877522/how-do-i-disable-missing-docstring-warnings-at-a-file-level-in-pylint)
+[How do I disable "missing docstring" warnings at a file-level in Pylint?](https://stackoverflow.com/questions/7877522/how-do-i-disable-missing-docstring-warnings-at-a-file-level-in-pylint)
