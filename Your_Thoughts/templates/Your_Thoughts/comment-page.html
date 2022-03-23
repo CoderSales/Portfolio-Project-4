@@ -9,6 +9,7 @@
 <body>
     <h1>Comment</h1>
     <table>
+        {% if post %}
         {% for post in posts %}
         <tr>
             {% if post.done %}
