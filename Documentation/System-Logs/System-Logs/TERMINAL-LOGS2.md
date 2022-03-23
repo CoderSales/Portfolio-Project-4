@@ -89,3 +89,7 @@ Line 50 `    # created_date = models.DateTimeField(default=timezone.now)`
 - delete migrations, rerun migration duo of commands
 
 - first push successful to version control system before trying to reintroduce other partslisted in last 3 lines above here.
+
+## new issue on heroku
+ 
+- [heroku app currently shows Server Error 500](https://your-thoughts-app.herokuapp.com/)
