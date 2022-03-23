@@ -15,3 +15,8 @@ preview or browser
 in README.md
 
 ## Continue with LMS (supplemented by Django Docs)
+
+## Note fields which need a default value while server error 500 on heroku
+author
+content
+created_on
