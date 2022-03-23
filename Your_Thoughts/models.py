@@ -15,7 +15,7 @@ class Post(models.Model):
     """
     allows creation of a post with name comment text and Completed fields
     """
-    LMS Django Blog 006b: Building The Models:
+    # LMS Django Blog 006b: Building The Models:
     title = models.CharField(max_length=200, unique=True)
     
     # Error in terminal: 
