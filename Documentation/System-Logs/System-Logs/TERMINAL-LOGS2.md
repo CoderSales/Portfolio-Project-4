@@ -117,7 +117,7 @@ Line 50 `    # created_date = models.DateTimeField(default=timezone.now)`
         - set 8000 to run
             - Note: yesterday that local vs live servers:
                 - local ran, live did not, error was in config vars, as per shown by only live server not working, i.e. consistent with initial root cause analysis step
-        - So, now chekc if local server is down as well.
+        - So, now check if local server is down as well.
     - Note: 
     - next terminal command after this:
         - git diff 53238b56f515120dc2e50bebd4b8c85e70694a61..2270ef64781ec97e58912f64f9cddde3b19eab11
