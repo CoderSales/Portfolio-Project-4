@@ -122,3 +122,19 @@ Line 50 `    # created_date = models.DateTimeField(default=timezone.now)`
     - next terminal command after this:
         - git diff 53238b56f515120dc2e50bebd4b8c85e70694a61..2270ef64781ec97e58912f64f9cddde3b19eab11
 
+    - so, on running cli command `python3 manage.py runserver`
+        - runs successfully, so similar to yesterday only live not working
+        - but difference here is that no modification since yesterday to config vars
+            - Aside:
+                - cli output on local running:
+
+```
+hello
+[23/Mar/2022 12:36:42] "GET / HTTP/1.1" 200 2961
+Not Found: /favicon.ico
+[23/Mar/2022 12:36:43] "GET /favicon.ico HTTP/1.1" 404 2648
+hello
+[23/Mar/2022 12:36:43] "GET / HTTP/1.1" 200 2961
+```
+
+
