@@ -1,0 +1,2 @@
+- git diff 2270ef64781ec97e58912f64f9cddde3b19eab11..53238b56f515120dc2e50bebd4b8c85e70694a61
+- git diff 2270ef64781ec97e58912f64f9cddde3b19eab11:Your_Thoughts/models.py 53238b56f515120dc2e50bebd4b8c85e70694a61:Your_Thoughts/models.py
