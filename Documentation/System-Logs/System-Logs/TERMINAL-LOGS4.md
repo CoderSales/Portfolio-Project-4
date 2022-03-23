@@ -43,3 +43,10 @@ Next step:
 - comment out code added since yesterday to models.py
 Next step:
 - remigrate (2 commands)
+
+## terminal i/o:
+`python3 manage.py makemigrations`
+SystemCheckError: System check identified some issues:
+
+ERRORS:
+Your_Thoughts.Post: (models.E015) 'ordering' refers to the nonexistent field, related field, or lookup 'created_on'.
