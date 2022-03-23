@@ -109,3 +109,4 @@ Line 50 `    # created_date = models.DateTimeField(default=timezone.now)`
 - still 500 server error after login from GitPod CLI
 - why is this occurring, what is the cause?
 - add issue on GitHub
+- add heroku server live page to GitHub either under issue and / or in commit
