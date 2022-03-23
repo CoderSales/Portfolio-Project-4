@@ -110,3 +110,4 @@ Line 50 `    # created_date = models.DateTimeField(default=timezone.now)`
 - why is this occurring, what is the cause?
 - add issue on GitHub
 - add heroku server live page to GitHub either under issue and / or in commit
+- [heroku live server link](https://git.heroku.com/your-thoughts-app.git)
