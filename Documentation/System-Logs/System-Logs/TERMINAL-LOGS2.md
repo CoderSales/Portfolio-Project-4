@@ -93,3 +93,17 @@ Line 50 `    # created_date = models.DateTimeField(default=timezone.now)`
 ## new issue on heroku
  
 - [heroku app currently shows Server Error 500](https://your-thoughts-app.herokuapp.com/)
+
+- getting 500 Server error
+- found:
+    - [Heroku giving 500 error with little information + Internal Server Error](https://stackoverflow.com/questions/46021463/heroku-giving-500-error-with-little-information-internal-server-error)
+- ran:
+    - `heroku logs -t`
+- terminal output
+    - `heroku: Waiting for login... ⣟`
+- from earlier issues with heroku login:
+    - Ctrl + C
+    - switch to:
+        - `heroku login -i`
+
+- still 500 server error after login from GitPod CLI
