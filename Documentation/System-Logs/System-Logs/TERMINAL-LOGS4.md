@@ -41,3 +41,5 @@ class Post(models.Model):
 
 Next step:
 - comment out code added since yesterday to models.py
+Next step:
+- remigrate (2 commands)
