@@ -10,16 +10,26 @@ from cloudinary.models import CloudinaryField  # LMS Django Blog 006b: Building 
 STATUS = ((0, "Draft"), (1, "Published"))  # LMS Django Blog 006b: Building The Models
 
 
-
 class Post(models.Model):
     # https://stackoverflow.com/questions/7877522/how-do-i-disable-missing-docstring-warnings-at-a-file-level-in-pylint
     """
     allows creation of a post with name comment text and Completed fields
     """
     # LMS Django Blog 006b: Building The Models:
-    title = models.CharField(max_length=200, unique=True)
-    slug = models.Slugfield(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_posts")
+    # title = models.CharField(max_length=200, unique=True)
+    
+    # Error in terminal: 
+    """You are trying to add a non-nullable field 'author' to post without a default; we can't do that (the database needs something to populate existing rows)."""
+    # Solution Reference for subsequent code block
+    # https://stackoverflow.com/questions/26185687/you-are-trying-to-add-a-non-nullable-field-new-field-to-userprofile-without-a
+    # You need to provide a default value:
+    # new_field = models.CharField(max_length=140, default='SOME STRING')
+
+
+
+    
+    # slug = models.SlugField(max_length=200, unique=True)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_posts", default=1)
     # above, "on_delete=CASCADE" in Foreign Key
     # means that if the one record in the 
     # one-to-many relationship 
@@ -28,11 +38,11 @@ class Post(models.Model):
     # So deleting a user will also 
     # delete their blog posts.
     updated_on = models.DateTimeField(auto_now=True)
-    content = models.TextField()
+    # content = models.TextField(default=0)
     featured_image = CloudinaryField('image', default='placeholder')
     excerpt = models.TextField(blank=True)
-    created_on = models.DateTimeField(auto_now_add=True)
-    status = models.IntegerField(choices=STATUS, default=0)
+    created_on = models.DateTimeField(auto_now_add=True) #, default='author'
+    # status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
     name = models.CharField(max_length=50, null=False, blank=False)
     # https://tutorial-extensions.djangogirls.org/en/homework_create_more_models
@@ -41,9 +51,30 @@ class Post(models.Model):
     # LMS
     done = models.BooleanField(null=False, blank=False, default=False)
 
+    class Meta:
+        ordering = ['-created_on']
+
     # Note:
     # in
     # PROBLEMS in Console View
     # __str__ does not return str
     def __str__(self):
         return self.name
+
+    def number_of_likes(self):
+        return self.likes.count()
+
+class Comment(models.Model):
+
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
+    name = models.CharField(max_length=80)
+    email = models.EmailField()
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    approved = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ['created_on']
+    
+    def __str__(self):
+        return f"Comment {self.body} by {self.name}"
