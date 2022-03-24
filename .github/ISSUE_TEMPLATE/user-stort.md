@@ -1,5 +1,5 @@
 ---
-name: User Stort
+name: User Story
 about: Default User Story Template
 title: USER STORY <TITLE>
 labels: ''
