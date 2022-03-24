@@ -14,8 +14,9 @@ STATUS = ((0, "Draft"), (1, "Published"))  # LMS Django Blog 006b: Building The 
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
-    new_field = models.CharField(max_length=140, default='SOME STRING')
-    slug = models.SlugField(max_length=200, unique=True, default='SOME STRING')
+    # new_field = models.CharField(max_length=140, default='SOME STRING')
+    # slug = models.SlugField(max_length=200, unique=True, default='SOME STRING')
+    slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_posts", default='string')
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField(default='text')
