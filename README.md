@@ -46,6 +46,7 @@ How to develop a blog application that provides this functionality to the useer?
 ## Theory
 ### Django
 django schematic ![django schematic](assets/images/basic-django-compressed.png)
+[Django introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction/basic-django.png)
 
 # Part 2 of 2: Stock Template for README.md
 
