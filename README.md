@@ -43,6 +43,10 @@ Desktop Home Page ![Desktop Home Page](assets/images/desktop-home-page-compresse
 - Problem statement:
 How to develop a blog application that provides this functionality to the useer?
 
+## Theory
+### Django
+django schematic ![django schematic](assets/images/basic-django-compressed.png)
+
 # Part 2 of 2: Stock Template for README.md
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
