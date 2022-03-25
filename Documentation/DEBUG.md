@@ -175,3 +175,22 @@ AttributeError: module 'django.contrib.admin' has no attribute 'sit'
 
 - Edited `sit` to `site` in admin.py
 - correction above allowed server launch without rerunning terminal commands
+
+# New [Resolved]
+## Bug 
+Page not loading
+## Further description of Issue and Solution
+- In one of the urls.py files, under urlpatterns:
+- two contradictory paths so, 
+- commented the first:
+
+```
+    # path('', views.get_comment, name='get_comment'),
+    path('', include('Your_Thoughts.urls'), name='Your_Thoughts_urls'),
+```
+
+
+
+
+
+

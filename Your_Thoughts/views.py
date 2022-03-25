@@ -4,9 +4,15 @@ sets out the views for Django website user
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Post
 from .forms import PostForm
+from django.views import generic
+from .models import Post
 
+class PostList(generic.ListView):
+    model = Post
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    template_name = 'index.html'
+    paginate_by = 6
 
-# Create your views here.
 def get_comment(user_request):
     """
     sets out how to get comment passing in user_request

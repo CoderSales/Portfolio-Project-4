@@ -30,3 +30,31 @@
 
 ### add doc string to Python module to stop Pylint linter error
 [How do I disable "missing docstring" warnings at a file-level in Pylint?](https://stackoverflow.com/questions/7877522/how-do-i-disable-missing-docstring-warnings-at-a-file-level-in-pylint)
+
+## Code Institute
+
+###  GitHub
+
+#### Django starter files
+- [Code-Institute-Solutions / django-blog-starter-files](https://github.com/Code-Institute-Solutions/django-blog-starter-files)
+    - used in: [this project at Portfolio-Project-4/static/css](/Portfolio-Project-4/static/css)
+- [django-blog-starter-files/templates/](https://github.com/Code-Institute-Solutions/django-blog-starter-files/tree/master/templates)
+
+##### style.css (in static/css/style.css)
+- [django-blog-starter-files/static/css/](https://github.com/Code-Institute-Solutions/django-blog-starter-files/tree/master/static/css)
+- [style.css](https://github.com/Code-Institute-Solutions/django-blog-starter-files/blob/master/static/css/style.css)
+
+#### Hello Django
+- [Code-Institute-Solutions / Hello-Django-Django3](https://github.com/Code-Institute-Solutions/Hello-Django-Django3)
+
+#### Django3blog
+- [Django3blog](https://github.com/Code-Institute-Solutions/Django3blog)
+- [Code-Institute-Solutions / django-blog-starter-files](https://github.com/Code-Institute-Solutions/django-blog-starter-files/tree/master/templates)
+- [04_building_the_models](https://github.com/Code-Institute-Solutions/Django3blog/tree/master/04_building_the_models)
+- [models.py](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/04_building_the_models/blog/models.py)
+
+- [06_creating_our_first_view](https://github.com/Code-Institute-Solutions/Django3blog/tree/master/06_creating_our_first_view)
+    - [Django3blog/06_creating_our_first_view/templates/index.html](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/06_creating_our_first_view/templates/index.html)
+### LMS Videos
+- Django Blog 007b: Creating the Admin Panel - part2
+- Django Blog 008a: Creating Our First View - part1
