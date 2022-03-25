@@ -71,7 +71,7 @@
 - Django Blog 011a: Commenting - part 1
 
 ## Django Documentation
-- [How Django processes a request¶](https://docs.djangoproject.com/en/3.2/topics/http/urls/#how-django-processes-a-request)
+- [How Django processes a request](https://docs.djangoproject.com/en/3.2/topics/http/urls/#how-django-processes-a-request)
 
 ## User Stories
 - [GitHub Issue Template](youtube.com/watch?v=2gsDUx7PDYo&t=269s)
