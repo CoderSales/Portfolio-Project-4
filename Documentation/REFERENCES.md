@@ -39,6 +39,7 @@
 - [Code-Institute-Solutions / django-blog-starter-files](https://github.com/Code-Institute-Solutions/django-blog-starter-files)
     - used in: [this project at Portfolio-Project-4/static/css](/Portfolio-Project-4/static/css)
 - [django-blog-starter-files/templates/](https://github.com/Code-Institute-Solutions/django-blog-starter-files/tree/master/templates)
+- [django-blog-starter-files/templates/account/](https://github.com/Code-Institute-Solutions/django-blog-starter-files/tree/master/templates/account)
 
 ##### style.css (in static/css/style.css)
 - [django-blog-starter-files/static/css/](https://github.com/Code-Institute-Solutions/django-blog-starter-files/tree/master/static/css)
@@ -57,6 +58,7 @@
     - [Django3blog/06_creating_our_first_view/templates/index.html](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/06_creating_our_first_view/templates/index.html)
 
 - [Django3blog/07_adding_post_detail/](https://github.com/Code-Institute-Solutions/Django3blog/tree/master/07_adding_post_detail)
+- [Django3blog/08_authorisation/](https://github.com/Code-Institute-Solutions/Django3blog/tree/master/08_authorisation)
 
 ### LMS Videos
 - Django Blog 007b: Creating the Admin Panel - part2
@@ -65,6 +67,7 @@
 - Django Blog 009
 - Django Blog 010a: Adding Authentication - part 1
 - Django Blog 010b: Adding Authentication - part2
+- Django Blog 011a: Commenting - part 1
 
 ## Django Documentation
 - [How Django processes a request¶](https://docs.djangoproject.com/en/3.2/topics/http/urls/#how-django-processes-a-request)
