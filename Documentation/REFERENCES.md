@@ -64,7 +64,8 @@
 - Django Blog 007b: Creating the Admin Panel - part2
 - Django Blog 008a: Creating Our First View - part1
 - Django Blog 008b: Creating Our First View - part 2
-- Django Blog 009
+- Django Blog 009a: Creating the PostDetail View - part1
+- Django Blog 009b: Creating the PostDetail View - part2
 - Django Blog 010a: Adding Authentication - part 1
 - Django Blog 010b: Adding Authentication - part2
 - Django Blog 011a: Commenting - part 1
