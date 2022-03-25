@@ -74,4 +74,4 @@
 - [How Django processes a request](https://docs.djangoproject.com/en/3.2/topics/http/urls/#how-django-processes-a-request)
 
 ## User Stories
-- [GitHub Issue Template](youtube.com/watch?v=2gsDUx7PDYo&t=269s)
+- [GitHub Issue Template](https://youtu.be/2gsDUx7PDYo?t=23)
