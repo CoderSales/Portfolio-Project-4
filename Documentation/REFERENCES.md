@@ -75,3 +75,6 @@
 
 ## User Stories
 - [GitHub Issue Template](https://youtu.be/2gsDUx7PDYo?t=23)
+
+## Official Documentation
+- [django-crispy-forms](django-crispy-forms.readthedocs.io/en/latest/index.html)
