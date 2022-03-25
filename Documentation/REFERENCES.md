@@ -64,6 +64,7 @@
 - Django Blog 008b: Creating Our First View - part 2
 - Django Blog 009
 - Django Blog 010a: Adding Authentication - part 1
+- Django Blog 010b: Adding Authentication - part2
 
 ## Django Documentation
 - [How Django processes a request¶](https://docs.djangoproject.com/en/3.2/topics/http/urls/#how-django-processes-a-request)
