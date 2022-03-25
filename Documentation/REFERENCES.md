@@ -58,3 +58,4 @@
 ### LMS Videos
 - Django Blog 007b: Creating the Admin Panel - part2
 - Django Blog 008a: Creating Our First View - part1
+- Django Blog 008b: Creating Our First View - part 2
