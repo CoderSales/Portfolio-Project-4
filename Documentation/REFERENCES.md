@@ -55,7 +55,13 @@
 
 - [06_creating_our_first_view](https://github.com/Code-Institute-Solutions/Django3blog/tree/master/06_creating_our_first_view)
     - [Django3blog/06_creating_our_first_view/templates/index.html](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/06_creating_our_first_view/templates/index.html)
+
+- [Django3blog/07_adding_post_detail/](https://github.com/Code-Institute-Solutions/Django3blog/tree/master/07_adding_post_detail)
+
 ### LMS Videos
 - Django Blog 007b: Creating the Admin Panel - part2
 - Django Blog 008a: Creating Our First View - part1
 - Django Blog 008b: Creating Our First View - part 2
+
+## Django Documentation
+- [How Django processes a request¶](https://docs.djangoproject.com/en/3.2/topics/http/urls/#how-django-processes-a-request)
