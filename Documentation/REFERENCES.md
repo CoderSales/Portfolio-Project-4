@@ -59,6 +59,7 @@
 
 - [Django3blog/07_adding_post_detail/](https://github.com/Code-Institute-Solutions/Django3blog/tree/master/07_adding_post_detail)
 - [Django3blog/08_authorisation/](https://github.com/Code-Institute-Solutions/Django3blog/tree/master/08_authorisation)
+- [Django3blog/09_commenting/](https://github.com/Code-Institute-Solutions/Django3blog/tree/master/09_commenting)
 
 ### LMS Videos
 - Django Blog 007b: Creating the Admin Panel - part2
@@ -78,3 +79,4 @@
 
 ## Official Documentation
 - [django-crispy-forms](django-crispy-forms.readthedocs.io/en/latest/index.html)
+- [Cross Site Request Forgery protection](https://docs.djangoproject.com/en/3.2/ref/csrf/)
