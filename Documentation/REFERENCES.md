@@ -72,6 +72,9 @@
 - Django Blog 011a: Commenting - part 1
 - Django Blog 011b: Commenting - part 2
 - Django Blog 012: Likes
+- Django Blog 013: Messages
+- Django Blog 014: Final Deployment
+
 
 ## Django Documentation
 - [How Django processes a request](https://docs.djangoproject.com/en/3.2/topics/http/urls/#how-django-processes-a-request)
@@ -82,3 +85,8 @@
 ## Official Documentation
 - [django-crispy-forms](django-crispy-forms.readthedocs.io/en/latest/index.html)
 - [Cross Site Request Forgery protection](https://docs.djangoproject.com/en/3.2/ref/csrf/)
+- For Summernote (deployment to heroku):
+    - In `settings.py`
+        - `X_FRAME_OPTIONS = 'SAMEORIGIN'`
+    - CORS (Cross-Origin Resource Sharing) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+    - LMS Video: Django Blog 014: Final Deployment
