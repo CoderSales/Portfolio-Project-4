@@ -189,8 +189,21 @@ Page not loading
     path('', include('Your_Thoughts.urls'), name='Your_Thoughts_urls'),
 ```
 
+# New [Resolved]
+## Not deploying to heroku
+## steps to solve
 
+- look at models in models.py
+- [Reference django docs](https://docs.djangoproject.com/en/4.0/ref/models/fields/)
 
+### Completely remove Django migrations and reset database
 
+1. Remove the all migrations files in project. Go through each of project apps' migration folders and remove everything inside, except the __init__.py file.
+
+2. Drop the database. If using Heroku Postgres, the command for this is: 
+`heroku pg:reset DATABASE_URL`.
+Locally, just delete the db.sqlite3  file.
+
+3.  Run the commands python3 manage.py makemigrations and python3 manage.py migrate to remake migrations and setup the new database.
 
 

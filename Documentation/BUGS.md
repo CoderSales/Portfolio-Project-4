@@ -188,3 +188,13 @@ in Browser is refreshed
 Posts now display 
 names of Users instead of generic values as before,
 as required.
+
+## Not Deploying to heroku Bug
+
+### Possible causes
+
+- DEBUG variable
+- DISABLE_COLLECTSTATIC config var
+- Migration files
+- Location of STATIC folder
+- Path to STATIC folder
