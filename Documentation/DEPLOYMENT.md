@@ -41,3 +41,8 @@ as previously there were no static files such as css.
 - For deployment this Config Var was deleted on heroku,
     - as there are now static files which need to be collected by heroku upon deployment. 
 
+3. 
+## 3 steps from DEBUG.md
+
+4. Recreate superuser after having deleted database
+    - `python manage.py createsuperuser`
