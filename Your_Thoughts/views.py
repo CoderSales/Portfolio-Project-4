@@ -1,10 +1,11 @@
 """
 sets out the views for Django website user
 """
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, reverse
 from .models import Post
 from .forms import PostForm, CommentForm
 from django.views import generic, View
+from django.http import HttpResponseRedirect
 # from .models import Post
 
 class PostList(generic.ListView):
@@ -18,7 +19,7 @@ class PostDetail(View):
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
-        comments = post.comments.filter(approved=True).order_by('created_on')
+        comments = post.comments.filter(approved=True).order_by('-created_on')
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
@@ -61,8 +62,8 @@ class PostDetail(View):
                 "comments": comments,
                 "liked": liked,
                 "commented": True,
-                "comment_form": CommentForm()
-            }
+                "comment_form": comment_form,
+            },
         )
 
 def get_comment(user_request):
@@ -133,3 +134,16 @@ def delete_post(user_request, post_id):
     post = get_object_or_404(Post, id=post_id)
     post.delete()
     return redirect('get_comment')
+
+
+class PostLike(View):
+
+    def post(self, request, slug, *args, **kwargs):
+        post = get_object_or_404(Post, slug=slug)
+
+        if post.likes.filter(id=request.user.id).exists():
+            post.likes.remove(request.user)
+        else:
+            post.likes.add(request.user)
+        
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))

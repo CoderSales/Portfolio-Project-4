@@ -71,6 +71,7 @@
 - Django Blog 010b: Adding Authentication - part2
 - Django Blog 011a: Commenting - part 1
 - Django Blog 011b: Commenting - part 2
+- Django Blog 012: Likes
 
 ## Django Documentation
 - [How Django processes a request](https://docs.djangoproject.com/en/3.2/topics/http/urls/#how-django-processes-a-request)
