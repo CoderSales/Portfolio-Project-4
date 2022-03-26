@@ -19,7 +19,7 @@ from Your_Thoughts import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', views.get_comment, name='get_comment'),
+    path('', views.get_comment, name='get_comment'),
     path('add', views.add_post, name='add'),
     path('edit/<post_id>', views.edit_post, name='edit'),
     path('toggle/<post_id>', views.toggle_post, name='toggle'),
