@@ -3,7 +3,7 @@ sets out the views for Django website user
 """
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Post
-from .forms import PostForm
+from .forms import PostForm, CommentForm
 from django.views import generic, View
 # from .models import Post
 
@@ -29,7 +29,8 @@ class PostDetail(View):
             {
                 "post": post,
                 "comments": comments,
-                "liked": liked
+                "liked": liked,
+                "comment_form": CommentForm()
             }
         )
 
