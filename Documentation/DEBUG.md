@@ -202,7 +202,13 @@ Page not loading
 
 2. Drop the database. If using Heroku Postgres, the command for this is: 
 `heroku pg:reset DATABASE_URL`.
-Locally, just delete the db.sqlite3  file.
+    - note:
+      - not working
+      - use:
+        - `heroku login -i`
+        - instead
+
+    - Locally, just delete the db.sqlite3  file.
 
 3.  Run the commands python3 manage.py makemigrations and python3 manage.py migrate to remake migrations and setup the new database.
 
