@@ -46,3 +46,7 @@ as previously there were no static files such as css.
 
 4. Recreate superuser after having deleted database
     - `python manage.py createsuperuser`
+
+5. check freeze requirements.txt e.g. Summernote
+
+6. check allowed hosts
