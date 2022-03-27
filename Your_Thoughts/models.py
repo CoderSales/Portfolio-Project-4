@@ -17,7 +17,7 @@ class Post(models.Model):
     # new_field = models.CharField(max_length=140, default='SOME STRING')
     # slug = models.SlugField(max_length=200, unique=True, default='SOME STRING')
     slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="Your_Thoughts_posts", default='string')
+    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_posts", default='string')
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField(default='text')
     featured_image = CloudinaryField('image', default='placeholder')
