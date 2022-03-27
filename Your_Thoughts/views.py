@@ -66,18 +66,18 @@ class PostDetail(View):
             },
         )
 
-# def get_comment(user_request):
-#     """
-#     sets out how to get comment passing in user_request
-#     """
+def get_comment(user_request):
+    """
+    sets out how to get comment passing in user_request
+    """
 
-#     print("hello")
-#     posts = Post.objects.all()
-#     context = {
-#         'posts': posts
-#     }
-#     # print(posts)
-#     return render(user_request, 'Your_Thoughts/comment-page.html', context)
+    print("hello")
+    posts = Post.objects.all()
+    context = {
+        'posts': posts
+    }
+    # print(posts)
+    return render(user_request, 'Your_Thoughts/comment-page.html', context)
 
 
 def add_post(user_request):

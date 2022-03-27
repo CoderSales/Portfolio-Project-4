@@ -9,7 +9,7 @@
 <body>
     <h1>Comment</h1>
     <table>
-        {% comment %} {% if post %} {% endcomment %}
+        {% if post %}
             {% for post in posts %}
             <tr>
                 {% if post.done %}
@@ -36,7 +36,7 @@
         {% empty %}
         <tr><td>You have no new posts.</td></tr>
     {% endfor %}
-    {% comment %} {% endif %} {% endcomment %}
+    {% endif %}
     </table>
     <a href="/add">Add a post</a>
 </body>
