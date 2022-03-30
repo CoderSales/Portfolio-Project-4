@@ -1,10 +1,10 @@
-from . import views
+from Your_Thoughts import views
 
 from django.contrib import admin
 from django.urls import path, include
 # from Your_Thoughts import views
 
-urlpatterns = [
+# urlpatterns = [
 
     # path('', views.get_comment, name='get_comment'),
 
@@ -15,15 +15,17 @@ urlpatterns = [
     # path('summernote/', include('django_summernote.urls')),
     # path('', include('Your_Thoughts.urls'), name='Your_Thoughts_urls'),
     # path('accounts/', include('allauth.urls')),
-]
+# ]
 
 urlpatterns = [
     # cannot seemingly have two roots, so line not working but page loads
     # path('', include('Your_Thoughts.urls'), name='Your_Thoughts_urls'),
 
-    path('', views.index, name='home'),
-    path('admin/', admin.site.urls),
-    path('', views.get_comment, name='get_comment'),
+    path('', views.index, name='Your_Thoughts'),
+    # path('admin/', admin.site.urls),
+
+    # possibly do not need these as already in Project level urls.py 
+    path('', views.get_comment, name='get_comment'), # may cause issues
     path('add', views.add_post, name='add'),
 
     path('edit/<post_id>', views.edit_post, name='edit'),

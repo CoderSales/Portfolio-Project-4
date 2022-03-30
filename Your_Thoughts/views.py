@@ -6,6 +6,7 @@ from .models import Post
 from .forms import PostForm, CommentForm
 from django.views import generic, View
 from django.http import HttpResponseRedirect
+# from home import views
 # from .models import Post
 
 #  moved up functions before classes so not crashing (urls.py Your_Thoughts)
@@ -81,7 +82,7 @@ def delete_post(user_request, post_id):
 # new function:
 def index(request):
     """ A view to return the index page """
-    return render(request, 'Your_Thoughts/index.html')
+    return render(request, 'Your_Thoughts/index.html') # modified from home to work as this views is in Y_T app
 
 class PostList(generic.ListView):
     model = Post

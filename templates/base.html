@@ -74,6 +74,7 @@
     {% comment %} {% earlier_content %} {% endcomment %}
     {% comment %} pre bootstrap Nav {% endcomment %}
     <!-- Navigation -->
+{% comment %} 
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">c<span class="red-o">o</span>de<span
@@ -123,16 +124,18 @@
             </div>
         </div>
     </div>
-
+ {% endcomment %}
     {% comment %} pre bootstrap main {% endcomment %}
+{% comment %} 
     <main class="flex-shrink-0 main-bg">
         {% block content2 %}
         <!-- Content Goes here -->
         {% endblock content2 %}
     </main>
-
+{% endcomment %}
     {% comment %} pre bootstrap footer{% endcomment %}
     <!-- Footer -->
+    {% comment %} 
     <footer class="footer mt-auto py-3 dark-bg">
         <p class="m-0 text-center text-white">Made by Code Instituters</p>
         <p class="m-0 text-center text-white">Follow us: <i class="fab fa-facebook-square ms-3"></i>
@@ -140,6 +143,6 @@
             <i class="fab fa-instagram-square ms-3"></i>
             <i class="fab fa-youtube-square ms-3"></i></p>
     </footer>
-
+{% endcomment %}
 </body>
 </html>

@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'Your_Thoughts',
+    'home',
     # 'django.contrib.sites',
     # 'allauth',
     # 'allauth.account',
@@ -96,7 +97,11 @@ ROOT_URLCONF = 'Profile_Project_4.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR,'templates', 'allauth'),
+            TEMPLATES_DIR
+            ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
