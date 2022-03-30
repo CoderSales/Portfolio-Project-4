@@ -22,7 +22,8 @@ from Your_Thoughts import views
 from home.views import index as index1
 from Your_Thoughts.views import index as index2
 # from Profile_Project_4.templates import index as indexProj
-
+from django.conf import settings
+from django.conf.urls.static import static
 # from . import views
 # import home
 # import home
@@ -51,4 +52,4 @@ urlpatterns = [
     path('', views.get_comment, name='get_comment'),
     # path('option2', indexProj.get_comment, name='get_comment'),
 
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
