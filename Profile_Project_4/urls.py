@@ -40,7 +40,7 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     #2 path('accounts/', home.include('allauth.urls')),
 
-    # path('', views.index, name='home'),
+    path('althome2', views.index, name='home'),
     # path('', views.index, name='Your_Thoughts'), # duplicated from above
     #3 path('', home.views.index, name='home.urls'),
     path('', index1, name='home.urls'),

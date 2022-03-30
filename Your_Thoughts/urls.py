@@ -22,6 +22,7 @@ urlpatterns = [
     # path('', include('Your_Thoughts.urls'), name='Your_Thoughts_urls'),
 
     path('', views.index, name='Your_Thoughts'),
+    path('althome', views.index, name='home'),
     # path('admin/', admin.site.urls),
 
     # possibly do not need these as already in Project level urls.py 
