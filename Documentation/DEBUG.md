@@ -213,3 +213,8 @@ Page not loading
 3.  Run the commands python3 manage.py makemigrations and python3 manage.py migrate to remake migrations and setup the new database.
 
 
+New steps
+- `pip3 install Pillow`
+- `pip3 freeze > requirements.txt`
+- `python3 manage.py loaddata categories`
+- `python3 manage.py loaddata categories`
