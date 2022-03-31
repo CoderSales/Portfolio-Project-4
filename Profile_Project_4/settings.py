@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'Your_Thoughts',
     'home',
+    'products',
     # 'django.contrib.sites',
     # 'allauth',
     # 'allauth.account',
