@@ -27,6 +27,7 @@ from django.conf.urls.static import static
 # from . import views
 # import home
 # import home
+# from home import products as products1
 
 
 urlpatterns = [
@@ -51,5 +52,8 @@ urlpatterns = [
 
     path('', views.get_comment, name='get_comment'),
     # path('option2', indexProj.get_comment, name='get_comment'),
+
+    path('products/', include('products.urls')),
+
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
