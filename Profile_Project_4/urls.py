@@ -19,34 +19,34 @@ https://stackoverflow.com/questions/11439447/django-import-views-from-separate-a
 from django.contrib import admin
 from django.urls import path, include
 from Your_Thoughts import views
-from home.views import index as index1
-from Your_Thoughts.views import index as index2
-# from Profile_Project_4.templates import index as indexProj
-from django.conf import settings
-from django.conf.urls.static import static
-# from . import views
-# import home
-# import home
-# from home import products as products1
+# # from home.views import index as index1
+# from Your_Thoughts.views import index as index2
+# # from Profile_Project_4.templates import index as indexProj
+# from django.conf import settings
+# from django.conf.urls.static import static
+# # from . import views
+# # import home
+# # import home
+# # from home import products as products1
 
 
 urlpatterns = [
     # #1 path('admin/', home.admin.site.urls),
     path('admin/', admin.site.urls),
-    # path('add', views.add_post, name='add'),
-    # path('edit/<post_id>', views.edit_post, name='edit'),
-    # path('toggle/<post_id>', views.toggle_post, name='toggle'),
-    # path('delete/<post_id>', views.delete_post, name='delete'),
-    # # path('summernote/', include('django_summernote.urls')),
-    # # path('', include('Your_Thoughts.urls'), name='Your_Thoughts_urls'),
-    # path('accounts/', include('allauth.urls')),
+    path('add', views.add_post, name='add'),
+    path('edit/<post_id>', views.edit_post, name='edit'),
+    path('toggle/<post_id>', views.toggle_post, name='toggle'),
+    path('delete/<post_id>', views.delete_post, name='delete'),
+    path('summernote/', include('django_summernote.urls')),
+    path('', include('Your_Thoughts.urls'), name='Your_Thoughts_urls'),
+    path('accounts/', include('allauth.urls')),
     # #2 path('accounts/', home.include('allauth.urls')),
 
     # # path('althome2', views.index, name='home'),
     # # path('', views.index, name='Your_Thoughts'), # duplicated from above
     # #3 path('', home.views.index, name='home.urls'),
     # path('', index1, name='home.urls'),
-    path('', index2, name='Your_Thoughts.urls'),
+    # path('', index2, name='Your_Thoughts.urls'),
     # path('', views.index, name='Your_Thoughts.urls'),
 
 
@@ -55,5 +55,5 @@ urlpatterns = [
 
     # path('products/', include('products.urls')),
 
-
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
+# ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
