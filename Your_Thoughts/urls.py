@@ -22,11 +22,11 @@ urlpatterns = [
     # path('', include('Your_Thoughts.urls'), name='Your_Thoughts_urls'),
 
     path('', views.index, name='Your_Thoughts'),
-    path('althome', views.index, name='home'),
+    # path('althome', views.index, name='home'),
     # path('admin/', admin.site.urls),
 
     # possibly do not need these as already in Project level urls.py 
-    path('', views.get_comment, name='get_comment'), # may cause issues
+    # path('', views.get_comment, name='get_comment'), # may cause issues
     path('add', views.add_post, name='add'),
 
     path('edit/<post_id>', views.edit_post, name='edit'),

@@ -31,29 +31,29 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    #1 path('admin/', home.admin.site.urls),
+    # #1 path('admin/', home.admin.site.urls),
     path('admin/', admin.site.urls),
-    path('add', views.add_post, name='add'),
-    path('edit/<post_id>', views.edit_post, name='edit'),
-    path('toggle/<post_id>', views.toggle_post, name='toggle'),
-    path('delete/<post_id>', views.delete_post, name='delete'),
-    path('summernote/', include('django_summernote.urls')),
-    # path('', include('Your_Thoughts.urls'), name='Your_Thoughts_urls'),
-    path('accounts/', include('allauth.urls')),
-    #2 path('accounts/', home.include('allauth.urls')),
+    # path('add', views.add_post, name='add'),
+    # path('edit/<post_id>', views.edit_post, name='edit'),
+    # path('toggle/<post_id>', views.toggle_post, name='toggle'),
+    # path('delete/<post_id>', views.delete_post, name='delete'),
+    # # path('summernote/', include('django_summernote.urls')),
+    # # path('', include('Your_Thoughts.urls'), name='Your_Thoughts_urls'),
+    # path('accounts/', include('allauth.urls')),
+    # #2 path('accounts/', home.include('allauth.urls')),
 
-    path('althome2', views.index, name='home'),
-    # path('', views.index, name='Your_Thoughts'), # duplicated from above
-    #3 path('', home.views.index, name='home.urls'),
-    path('', index1, name='home.urls'),
-    path('alt/', index2, name='Your_Thoughts.urls'),
+    # # path('althome2', views.index, name='home'),
+    # # path('', views.index, name='Your_Thoughts'), # duplicated from above
+    # #3 path('', home.views.index, name='home.urls'),
+    # path('', index1, name='home.urls'),
+    path('', index2, name='Your_Thoughts.urls'),
     # path('', views.index, name='Your_Thoughts.urls'),
 
 
-    path('', views.get_comment, name='get_comment'),
+    # path('', views.get_comment, name='get_comment'),
     # path('option2', indexProj.get_comment, name='get_comment'),
 
-    path('products/', include('products.urls')),
+    # path('products/', include('products.urls')),
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
