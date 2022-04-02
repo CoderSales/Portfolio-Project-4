@@ -9,6 +9,79 @@ from django.http import HttpResponseRedirect
 # from home import views
 # from .models import Post
 
+
+class PostList(generic.ListView):
+    model = Post
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    template_name = 'index.html'
+    paginate_by = 6
+
+class PostDetail(View):
+
+    def get(self, request, slug, *args, **kwargs):
+        queryset = Post.objects.filter(status=1)
+        post = get_object_or_404(queryset, slug=slug)
+        comments = post.comments.filter(approved=True).order_by('-created_on')
+        liked = False
+        if post.likes.filter(id=self.request.user.id).exists():
+            liked = True
+
+        return render(
+            request,
+            "post_detail.html",
+            {
+                "post": post,
+                "comments": comments,
+                "commented": False,
+                "liked": liked,
+                "comment_form": comment_form,
+            },
+        )
+
+    def post(self, request, slug, *args, **kwargs):
+        queryset = Post.objects.filter(status=1)
+        post = get_object_or_404(queryset, slug=slug)
+        comments = post.comments.filter(approved=True).order_by('-created_on')
+        liked = False
+        if post.likes.filter(id=self.request.user.id).exists():
+            liked = True
+
+        comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+            comment_form.instance.email = request.user.email
+            comment_form.instance.name = request.user.username
+            comment = comment_form.save(commit=False)
+            comment.post = post
+            comment.save()
+        else:
+            comment_form = CommentForm()
+
+        return render(
+            request,
+            "post_detail.html",
+            {
+                "post": post,
+                "comments": comments,
+                "liked": liked,
+                "commented": True,
+                "comment_form": CommentForm(),
+            },
+        )
+
+
+class PostLike(View):
+
+    def post(self, request, slug, *args, **kwargs):
+        post = get_object_or_404(Post, slug=slug)
+
+        if post.likes.filter(id=request.user.id).exists():
+            post.likes.remove(request.user)
+        else:
+            post.likes.add(request.user)
+        
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
 #  moved up functions before classes so not crashing (urls.py Your_Thoughts)
 
 def get_comment(user_request):
@@ -83,75 +156,3 @@ def delete_post(user_request, post_id):
 # def index(request):
 #     """ A view to return the index page """
 #     return render(request, 'Your_Thoughts/index.html') # modified from home to work as this views is in Y_T app
-
-class PostList(generic.ListView):
-    model = Post
-    queryset = Post.objects.filter(status=1).order_by('-created_on')
-    template_name = 'index.html'
-    paginate_by = 6
-
-class PostDetail(View):
-
-    def get(self, request, slug, *args, **kwargs):
-        queryset = Post.objects.filter(status=1)
-        post = get_object_or_404(queryset, slug=slug)
-        comments = post.comments.filter(approved=True).order_by('-created_on')
-        liked = False
-        if post.likes.filter(id=self.request.user.id).exists():
-            liked = True
-
-        return render(
-            request,
-            "post_detail.html",
-            {
-                "post": post,
-                "comments": comments,
-                "commented": False,
-                "liked": liked,
-                "comment_form": comment_form,
-            },
-        )
-
-    def post(self, request, slug, *args, **kwargs):
-        queryset = Post.objects.filter(status=1)
-        post = get_object_or_404(queryset, slug=slug)
-        comments = post.comments.filter(approved=True).order_by('-created_on')
-        liked = False
-        if post.likes.filter(id=self.request.user.id).exists():
-            liked = True
-
-        comment_form = CommentForm(data=request.POST)
-        if comment_form.is_valid():
-            comment_form.instance.email = request.user.email
-            comment_form.instance.name = request.user.username
-            comment = comment_form.save(commit=False)
-            comment.post = post
-            comment.save()
-        else:
-            comment_form = CommentForm()
-
-        return render(
-            request,
-            "post_detail.html",
-            {
-                "post": post,
-                "comments": comments,
-                "liked": liked,
-                "commented": True,
-                "comment_form": CommentForm(),
-            },
-        )
-
-
-class PostLike(View):
-
-    def post(self, request, slug, *args, **kwargs):
-        post = get_object_or_404(Post, slug=slug)
-
-        if post.likes.filter(id=request.user.id).exists():
-            post.likes.remove(request.user)
-        else:
-            post.likes.add(request.user)
-        
-        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-
