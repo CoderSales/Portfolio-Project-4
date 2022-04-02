@@ -80,9 +80,9 @@ def delete_post(user_request, post_id):
     return redirect('get_comment')
 
 # new function:
-def index(request):
-    """ A view to return the index page """
-    return render(request, 'Your_Thoughts/index.html') # modified from home to work as this views is in Y_T app
+# def index(request):
+#     """ A view to return the index page """
+#     return render(request, 'Your_Thoughts/index.html') # modified from home to work as this views is in Y_T app
 
 class PostList(generic.ListView):
     model = Post
@@ -141,11 +141,6 @@ class PostDetail(View):
                 "comment_form": CommentForm(),
             },
         )
-
-
-
-
-
 
 
 class PostLike(View):
