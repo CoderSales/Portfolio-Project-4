@@ -33,17 +33,17 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 
 # current:
-# DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = 'DEVELOPMENT' in os.environ
 # DEBUG = False
-DEBUG = True
+# DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 if 'DEVELOPMENT' in os.environ:
     ALLOWED_HOSTS = ['localhost']
 else:
-    # ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME'), 'your-thoughts-app.herokuapp.com']
-    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
+    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME'), 'your-thoughts-app.herokuapp.com']
+    # ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
 
 # Application definition
