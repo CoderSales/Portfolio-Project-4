@@ -62,6 +62,8 @@ django schematic ![django schematic](assets/images/basic-django-compressed.png)
 - [Hello Django](https://github.com/Code-Institute-Solutions/Hello-Django-Django3/tree/master/08-Testing)
 - [Django3blog](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/12_final_deployment/)
 - [eCommerce platform](https://github.com/Code-Institute-Solutions/Boutique-Ado/tree/master/05-The-Home-Page)
+## Video on which post observation was made
+- [Two Vortex Rings Colliding in SLOW MOTION - Smarter Every Day 195](https://youtu.be/EVbdbVhzcM4?t=381)
 
 For further references, see REFERENCES.md in Documentation folder.
 
