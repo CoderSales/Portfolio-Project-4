@@ -1,9 +1,14 @@
+"""
+test_views
+"""
 from django.test import TestCase
 from .models import Post
 
 
 class TestViews(TestCase):
-
+    """
+    Test Views
+    """
     def test_get_Post(self):
         user_response = self.client.get('/')
         self.assertEqual(user_response.status_code, 200)
@@ -30,7 +35,7 @@ class TestViews(TestCase):
         self.assertRedirects(user_response, '/')
         existing_posts = Post.objects.filter(id=post.id)
         self.assertEqual(len(existing_posts), 0)
-        
+
     def test_can_toggle_Post(self):
         post = Post.objects.create(name='Test Post', done=True)
         user_response = self.client.get(f'/toggle/{post.id}')
@@ -44,5 +49,3 @@ class TestViews(TestCase):
         self.assertRedirects(user_response, '/')
         updated_post = Post.objects.get(id=post.id)
         self.assertEqual(updated_post.name, 'Updated Name')
-
-

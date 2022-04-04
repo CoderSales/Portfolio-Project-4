@@ -6,13 +6,19 @@ from django.http import HttpResponseRedirect
 
 
 class PostList(generic.ListView):
+    """
+    Post List
+    """
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'index.html'
     paginate_by = 6
 
-class PostDetail(View):
 
+class PostDetail(View):
+    """
+    Open Detail on Post
+    """
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
@@ -40,10 +46,10 @@ class PostDetail(View):
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
-        # else:
-            # post.likes.add(request.user)
+        else:
+            post.likes.add(request.user)
 
-        # return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
@@ -77,11 +83,11 @@ class PostLike(View):
             post.likes.remove(request.user)
         else:
             post.likes.add(request.user)
-        
+
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-#  moved up functions before classes so not crashing (urls.py Your_Thoughts)
+#  moved up functions before classes for file (urls.py Your_Thoughts)
 
 def get_comment(user_request):
     """
@@ -93,7 +99,6 @@ def get_comment(user_request):
     context = {
         'posts': posts
     }
-    # print(posts)
     return render(user_request, 'Your_Thoughts/comment-page.html', context)
 
 
@@ -142,6 +147,7 @@ def toggle_post(user_request, post_id):
     post.save()
     return redirect('get_comment')
 
+
 def delete_post(user_request, post_id):
     """
     add delete button for post
@@ -150,8 +156,3 @@ def delete_post(user_request, post_id):
     post = get_object_or_404(Post, id=post_id)
     post.delete()
     return redirect('get_comment')
-
-# new function:
-# def index(request):
-#     """ A view to return the index page """
-#     return render(request, 'Your_Thoughts/index.html') # modified from home to work as this views is in Y_T app
