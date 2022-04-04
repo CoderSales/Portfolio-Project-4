@@ -49,7 +49,7 @@ django schematic ![django schematic](assets/images/basic-django-compressed.png)
 [Django introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction/basic-django.png)
 
 ## Deployed site:
-![responsive-design.png](/workspace/Portfolio-Project-4/assets/images/responsive-design.png)
+![responsive-design.png](assets/images/responsive-design.png)
 
 ## Main References:
 ## Template
