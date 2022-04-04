@@ -67,6 +67,35 @@ django schematic ![django schematic](assets/images/basic-django-compressed.png)
 
 For further references, see REFERENCES.md in Documentation folder.
 
+## Notes on deployment
+For errors inn the database and migrations as a last resort:
+### Completely remove Django migrations and reset database
+
+1. Remove the all migrations files in project. Go through each of project apps' migration folders and remove everything inside, except the __init__.py file.
+
+2. Drop the database. If using Heroku Postgres, the command for this is: 
+- `heroku login -i`
+
+- `heroku pg:reset DATABASE_URL`.
+
+    - Locally, delete the db.sqlite3 file.
+
+3.  Run the commands python3 manage.py makemigrations and python3 manage.py migrate to remake migrations and setup the new database.
+
+### Next
+1. `python3 manage.py createsuperuser`
+2. Push to GitHub and heroku
+3. Either use Automatic deployment or manual deployment
+4. Click Open App
+
+Note:
+DEBUG = False
+
+From Django Documentation(https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/):
+`When DEBUG = False, Django doesn’t work at all without a suitable value for ALLOWED_HOSTS.`
+
+
+
 
 # Part 2 of 2: Stock Template for README.md
 
