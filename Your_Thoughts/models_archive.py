@@ -1,15 +1,24 @@
+"""
+import models
+"""
 import datetime
 from django.db import models
 from django.utils import timezone
-from django.contrib.auth.models import User
-from cloudinary.models import CloudinaryField
 
-STATUS = ((0, "Draft"), (1, "Published"))
+from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField  # LMS Django Blog 006b: Building The Models
+
+
+STATUS = ((0, "Draft"), (1, "Published"))  # LMS Django Blog 006b: Building The Models
 
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
+    # new_field = models.CharField(max_length=140, default='SOME STRING', blank=True)
+    # slug = models.SlugField(max_length=200, unique=True, default='SOME STRING', blank=True)
+    # slug = models.SlugField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True, blank=True)
+
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_posts", default='string')
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField(default='text')
@@ -29,6 +38,10 @@ class Post(models.Model):
     class Meta:
         ordering = ["-created_on"]
 
+    # Note:
+    # in
+    # PROBLEMS in Console View
+    # __str__ does not return str
     def __str__(self):
         return self.title
 
