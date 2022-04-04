@@ -56,12 +56,17 @@ How to develop a blog application that provides this functionality to the useer?
 - [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/contents/)
 - [heroku](https://en.wikipedia.org/wiki/Heroku)
 - [tiny png](https://tinypng.com/)
+- [diffchecker](https://www.diffchecker.com/)
 
 
 ## Theory
 ### Django
 django schematic ![django schematic](assets/images/basic-django-compressed.png)
 [Django introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction/basic-django.png)
+
+## Validation
+- [CSS Validation](https://beautifytools.com/javascript-validator.php)
+- [JS Validation](https://jigsaw.w3.org/css-validator/validator)
 
 ## Deployed site:
 ![responsive-design.png](assets/images/responsive-design.png)
