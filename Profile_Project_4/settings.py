@@ -33,8 +33,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 
 # current:
-DEBUG = 'DEVELOPMENT' in os.environ
-# DEBUG = False
+# DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = False
 # DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
