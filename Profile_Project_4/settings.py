@@ -22,27 +22,16 @@ if os.path.isfile('env.py'):
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
-# SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = development
-
-
-# current:
-# DEBUG = 'DEVELOPMENT' in os.environ
+# Deloyment status for  production:
 DEBUG = False
-# DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 if 'DEVELOPMENT' in os.environ:
     ALLOWED_HOSTS = ['localhost']
 else:
-    # ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME'), 'your-thoughts-app.herokuapp.com']
     ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
 
@@ -64,12 +53,6 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'Your_Thoughts',
-    # 'home',
-    # 'products',
-    # 'django.contrib.sites',
-    # 'allauth',
-    # 'allauth.account',
-    # 'allauth.socialaccount',
 ]
 
 SITE_ID = 1
@@ -125,17 +108,6 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 SITE_ID = 1
-
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
-# ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
-# ACCOUNT_EMAIL_REQUIRED = True
-# ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-# ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
-# ACCOUNT_USERNAME_MIN_LENGTH = 4
-# LOGIN_URL = '/accounts/login/'
-# LOGIN_REDIRECT_URL = '/ '
-
 
 
 WSGI_APPLICATION = 'Profile_Project_4.wsgi.application'
@@ -199,7 +171,7 @@ STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # may interfere with setting up Amazon Web Services later
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # may interfere with setting up Amazon Web Services
 # STATIC_ROOT = 'static'
 
 MEDIA_URL = '/media/'
