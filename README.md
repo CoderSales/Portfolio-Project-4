@@ -43,6 +43,21 @@ Desktop Home Page ![Desktop Home Page](assets/images/desktop-home-page-compresse
 - Problem statement:
 How to develop a blog application that provides this functionality to the useer?
 
+## Technologies used:
+- [Python](https://www.python.org/)
+- [Django](https://docs.djangoproject.com/en/4.0/topics/i18n/)
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [GitHub](https://github.com/)
+- [Gitpod](https://www.gitpod.io/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Cloudinary](https://cloudinary.com/)
+- [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/contents/)
+- [heroku](https://en.wikipedia.org/wiki/Heroku)
+- [tiny png](https://tinypng.com/)
+
+
 ## Theory
 ### Django
 django schematic ![django schematic](assets/images/basic-django-compressed.png)
@@ -64,6 +79,8 @@ django schematic ![django schematic](assets/images/basic-django-compressed.png)
 - [eCommerce platform](https://github.com/Code-Institute-Solutions/Boutique-Ado/tree/master/05-The-Home-Page)
 ## Video on which post observation was made
 - [Two Vortex Rings Colliding in SLOW MOTION - Smarter Every Day 195](https://youtu.be/EVbdbVhzcM4?t=381)
+## Other references
+- Stackoverflow
 
 For further references, see REFERENCES.md in Documentation folder.
 
