@@ -85,7 +85,7 @@ django schematic ![django schematic](assets/images/basic-django-compressed.png)
 For further references, see REFERENCES.md in Documentation folder.
 
 ## Notes on deployment
-For errors inn the database and migrations as a last resort:
+For errors in the database and migrations, as a last resort:
 ### Completely remove Django migrations and reset database
 
 1. Remove the all migrations files in project. Go through each of project apps' migration folders and remove everything inside, except the __init__.py file.
@@ -96,12 +96,14 @@ For errors inn the database and migrations as a last resort:
 - `heroku pg:reset DATABASE_URL`.
 
     - Locally, delete the db.sqlite3 file.
-
+Note: only use if no other option.
 3.  Run the commands python3 manage.py makemigrations and python3 manage.py migrate to remake migrations and setup the new database.
 
-### Next
-1. `python3 manage.py createsuperuser`
+### Standard Deployment
+1. Once `python3 manage.py makemigrations` and `python3 manage.py migrate` are run
+`python3 manage.py createsuperuser`
 2. Push to GitHub and heroku
+Note: Must authorise GitHub to connect to heroku
 3. Either use Automatic deployment or manual deployment
 4. Click Open App
 
