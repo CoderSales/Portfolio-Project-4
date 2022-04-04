@@ -7,7 +7,7 @@ Mobile first
 In repository:
 Navigate to Documentation folder.
 
-**Files present:**
+**Main Documentation Files present:**
 - BUGS.md
 - CHALLENGES.md
 - DEBUG.md
@@ -47,6 +47,24 @@ How to develop a blog application that provides this functionality to the useer?
 ### Django
 django schematic ![django schematic](assets/images/basic-django-compressed.png)
 [Django introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction/basic-django.png)
+
+## Deployed site:
+![responsive-design.png](/workspace/Portfolio-Project-4/assets/images/responsive-design.png)
+
+## Main References:
+## Template
+- [Template](https://github.com/Code-Institute-Org/gitpod-full-template)
+### LMS Tutorials:
+- Hello Django
+- I think therefore I blog
+- Building an eCommerce platform
+### Corresponding repositories:
+- [Hello Django](https://github.com/Code-Institute-Solutions/Hello-Django-Django3/tree/master/08-Testing)
+- [Django3blog](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/12_final_deployment/)
+- [eCommerce platform](https://github.com/Code-Institute-Solutions/Boutique-Ado/tree/master/05-The-Home-Page)
+
+For further references, see REFERENCES.md in Documentation folder.
+
 
 # Part 2 of 2: Stock Template for README.md
 
