@@ -132,7 +132,8 @@ TBC
 ##### Build:
 TBC
 ##### Test:
-TBC
+```python3 manage.py runserver```
+should run server
 ##### Review:
 TBC
 ##### Launch:
