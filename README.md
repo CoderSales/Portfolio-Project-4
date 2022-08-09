@@ -118,21 +118,27 @@ DEBUG = False
 From Django Documentation(https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/):
 `When DEBUG = False, Django doesn’t work at all without a suitable value for ALLOWED_HOSTS.`
 
-## Working on adding CRUD functionality
-Note: 
-Bug found: 
-```need to provide CLOUDINARY_STORAGE dictionary with CLOUD_NAME, API_SECRET and API_KEY in the settings or set CLOUDINARY_URL variable```
 
 ## Agile Methodology:
 ### Sprint n:
 #### Steps: 
-Analyze
-Plan
-Design
-Build
-Test
-Review
-Launch
+##### Analyze:
+###### Bug found while working on adding CRUD functionality
+```need to provide CLOUDINARY_STORAGE dictionary with CLOUD_NAME, API_SECRET and API_KEY in the settings or set CLOUDINARY_URL variable```
+##### Plan:
+Defer until revising deployment section of project
+##### Design:
+TBC
+##### Build:
+TBC
+##### Test:
+TBC
+##### Review:
+TBC
+##### Launch:
+TBC
+
+
 
 #### Reference:
 - [Iteration vs Sprint vs cadence in Agile [Meaning and difference]](https://bigpicture.one/sprint-cadence-iteration/)
