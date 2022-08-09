@@ -118,7 +118,10 @@ DEBUG = False
 From Django Documentation(https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/):
 `When DEBUG = False, Django doesn’t work at all without a suitable value for ALLOWED_HOSTS.`
 
-
+## Working on adding CRUD functionality
+Note: 
+Bug found: 
+```need to provide CLOUDINARY_STORAGE dictionary with CLOUD_NAME, API_SECRET and API_KEY in the settings or set CLOUDINARY_URL variable```
 
 
 # Part 2 of 2: Stock Template for README.md
