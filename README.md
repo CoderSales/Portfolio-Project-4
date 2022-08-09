@@ -153,7 +153,16 @@ TBC
 ##### Launch:
 TBC
 
+### Sprint n+1:
 
+#### 
+##### Analyze
+##### Plan
+##### Design
+##### Build
+##### Test
+##### Review
+##### Launch
 
 #### Reference:
 - [Iteration vs Sprint vs cadence in Agile [Meaning and difference]](https://bigpicture.one/sprint-cadence-iteration/)
