@@ -120,6 +120,20 @@ From Django Documentation(https://docs.djangoproject.com/en/4.0/howto/deployment
 
 
 ## Agile Methodology:
+
+
+### Sprint n-1: 
+#### Add CRUD Functionality
+
+###### Analyze
+
+###### Plan
+Review tutorials for 'I think therefore I blog'
+###### Design
+###### Build
+###### Test
+###### Review
+###### Launch
 ### Sprint n:
 #### Steps: 
 ##### Analyze:
