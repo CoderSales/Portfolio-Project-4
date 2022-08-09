@@ -123,6 +123,19 @@ Note:
 Bug found: 
 ```need to provide CLOUDINARY_STORAGE dictionary with CLOUD_NAME, API_SECRET and API_KEY in the settings or set CLOUDINARY_URL variable```
 
+## Agile Methodology:
+### Sprint n:
+#### Steps: 
+Analyze
+Plan
+Design
+Build
+Test
+Review
+Launch
+
+#### Reference:
+- [Iteration vs Sprint vs cadence in Agile [Meaning and difference]](https://bigpicture.one/sprint-cadence-iteration/)
 
 # Part 2 of 2: Stock Template for README.md
 
