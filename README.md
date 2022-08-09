@@ -146,6 +146,10 @@ TBC
 ##### Build:
 TBC
 ##### Test:
+change DEBUG to:
+```DEBUG = 'DEVELOPMENT' in os.environ```
+However, this does not resolve the issue.
+
 ```python3 manage.py runserver```
 should run server
 ##### Review:
