@@ -57,7 +57,7 @@ How to develop a blog application that provides this functionality to the useer?
 - [heroku](https://en.wikipedia.org/wiki/Heroku)
 - [tiny png](https://tinypng.com/)
 - [diffchecker](https://www.diffchecker.com/)
-
+- [YouTrack JetBrains](https://www.jetbrains.com/youtrack/)
 
 ## Theory
 ### Django
