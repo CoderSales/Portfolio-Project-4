@@ -122,6 +122,7 @@ From Django Documentation(https://docs.djangoproject.com/en/4.0/howto/deployment
 ## Agile Methodology:
 
 
+
 ### Sprint n-1: 
 #### Add CRUD Functionality
 
@@ -130,15 +131,19 @@ From Django Documentation(https://docs.djangoproject.com/en/4.0/howto/deployment
 ###### Plan
 Review tutorials for 'I think therefore I blog'
 ###### Design
-
+Rewatch videos
 ###### Build
-
+Edit CRUD functionality
 ###### Test
-
+Test CRUD functionality
+- Can user add post?
+- Can user delete post?
+- Can user update post?
+- Can user Read post?
 ###### Review
-
+TBC
 ###### Launch
-
+TBC
 ### Sprint n:
 #### Steps: 
 ##### Analyze:
@@ -175,19 +180,58 @@ The 3 steps were:
 
 ###### To run server on heroku:
 Go to Heroku 
-### Sprint n+1:
+### Iteration 2:
 
-#### 
+#### Second bug after getting local server working
 ##### Analyze
-Get results of first iteration
+Get results of first iteration:
+```
+OperationalError at /
+no such table: Your_Thoughts_post
+Request Method:	GET
+Request URL:	http://localhost:8000/
+Django Version:	3.2
+Exception Type:	OperationalError
+Exception Value:	
+no such table: Your_Thoughts_post
+Exception Location:	/workspace/.pip-modules/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py, line 423, in execute
+Python Executable:	/home/gitpod/.pyenv/versions/3.8.11/bin/python3
+Python Version:	3.8.11
+Python Path:	
+['/workspace/Portfolio-Project-4',
+ '/home/gitpod/.pyenv/versions/3.8.11/lib/python38.zip',
+ '/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8',
+ '/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/lib-dynload',
+ '/workspace/.pip-modules/lib/python3.8/site-packages',
+ '/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/site-packages']
+Server time:	Tue, 09 Aug 2022 21:28:07 +0000
+```
 ##### Plan
-Go to heroku
+Test if it deploys on heroku
+
 ##### Design
 TBC
 ##### Build
 TBC
 ##### Test
 Test if it deploys on heroku
+##### Review
+TBC
+##### Launch
+TBC
+
+#### 3rd iteration:
+Go to heroku to check app is working
+##### Analyze
+TBC
+##### Plan
+Go to heroku to check app is working
+##### Design
+TBC
+##### Build
+TBC
+##### Test
+Go to heroku to check app is working
 ##### Review
 TBC
 ##### Launch
