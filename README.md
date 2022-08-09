@@ -130,15 +130,21 @@ From Django Documentation(https://docs.djangoproject.com/en/4.0/howto/deployment
 ###### Plan
 Review tutorials for 'I think therefore I blog'
 ###### Design
+
 ###### Build
+
 ###### Test
+
 ###### Review
+
 ###### Launch
+
 ### Sprint n:
 #### Steps: 
 ##### Analyze:
 ###### Bug found while working on adding CRUD functionality
 ```need to provide CLOUDINARY_STORAGE dictionary with CLOUD_NAME, API_SECRET and API_KEY in the settings or set CLOUDINARY_URL variable```
+### Iteration 2 of Sprint:
 ##### Plan:
 Defer until revising deployment section of project
 ##### Design:
@@ -150,26 +156,72 @@ change DEBUG to:
 ```DEBUG = 'DEVELOPMENT' in os.environ```
 However, this does not resolve the issue.
 
-```python3 manage.py runserver```
-should run server
-##### Review:
-TBC
-##### Launch:
-TBC
+Added CLOUDINARY_URL to Gitpod environment variables on Gitpod dashboard.
 
+Restarted Gitpod Workspace
+
+```python3 manage.py runserver```
+
+Runs server.
+##### Review:
+The 3 steps were:
+1. change DEBUG in settings.py
+2. add CLOUDINARY_URL to Gitpod environment variables on Gitpod dashboard
+3. restart Gitpod workspace
+##### Launch:
+###### To run server locally run:
+```python3 manage.py runserver```
+
+
+###### To run server on heroku:
+Go to Heroku 
 ### Sprint n+1:
 
 #### 
 ##### Analyze
+Get results of first iteration
 ##### Plan
+Go to heroku
 ##### Design
+TBC
 ##### Build
+TBC
 ##### Test
+Test if it deploys on heroku
 ##### Review
+TBC
 ##### Launch
-
+TBC
 #### Reference:
 - [Iteration vs Sprint vs cadence in Agile [Meaning and difference]](https://bigpicture.one/sprint-cadence-iteration/)
+
+
+#### More Agile Theory
+
+```
+What Is the Agile Sprint Cycle?
+The Agile sprint cycle, or workflow, is the repetitive process that developers use to tackle a development project. A software project can take as many as ten sprint cycles.
+
+Although there is room for variation, most sprint cycles break down like this:
+
+Planning
+
+Backlog
+
+The Sprint
+
+Daily Scrum
+
+Outcome
+
+Sprint End
+
+Sprint review.
+
+Sprint retrospective.
+```
+#### Reference for the above quoted paragraphs
+- [Agile Sprint in Software Development: Definition, Process, and Roles Involved: What Is the Agile Sprint Cycle?](https://www.simplilearn.com/agile-sprint-article#:~:text=The%20Agile%20sprint%20cycle%2C%20or,many%20as%20ten%20sprint%20cycles.)
 
 # Part 2 of 2: Stock Template for README.md
 
