@@ -267,6 +267,152 @@ Sprint retrospective.
 #### Reference for the above quoted paragraphs
 - [Agile Sprint in Software Development: Definition, Process, and Roles Involved: What Is the Agile Sprint Cycle?](https://www.simplilearn.com/agile-sprint-article#:~:text=The%20Agile%20sprint%20cycle%2C%20or,many%20as%20ten%20sprint%20cycles.)
 
+# Log of work
+## Bug continued
+
+```
+OperationalError at /
+no such table: Your_Thoughts_post
+Request Method:	GET
+Request URL:	http://localhost:8000/
+Django Version:	3.2
+Exception Type:	OperationalError
+Exception Value:	
+no such table: Your_Thoughts_post
+```
+
+### Potential fix:
+Run migrations
+
+### Continuous log of Terminal
+
+```
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: Your_Thoughts_post
+[10/Aug/2022 09:50:49] "GET / HTTP/1.1" 500 175476
+Not Found: /favicon.ico
+[10/Aug/2022 09:50:50] "GET /favicon.ico HTTP/1.1" 404 3280
+^Cgitpod /workspace/Portfolio-Project-4 (main) $ python3 manage.py makemigrations --dry-run
+Migrations for 'django_summernote':
+  /workspace/.pip-modules/lib/python3.8/site-packages/django_summernote/migrations/0003_alter_attachment_id.py
+    - Alter field id on attachment
+gitpod /workspace/Portfolio-Project-4 (main) $ python3 manage.py makemigrations
+Migrations for 'django_summernote':
+  /workspace/.pip-modules/lib/python3.8/site-packages/django_summernote/migrations/0003_alter_attachment_id.py
+    - Alter field id on attachment
+gitpod /workspace/Portfolio-Project-4 (main) $ python3 manage.py migrate --plan
+Planned operations:
+contenttypes.0001_initial
+    Create model ContentType
+    Alter unique_together for contenttype (1 constraint(s))
+auth.0001_initial
+    Create model Permission
+    Create model Group
+    Create model User
+Your_Thoughts.0001_initial
+    Create model Post
+    Create model Comment
+account.0001_initial
+    Create model EmailAddress
+    Create model EmailConfirmation
+account.0002_email_max_length
+    Alter field email on emailaddress
+admin.0001_initial
+    Create model LogEntry
+admin.0002_logentry_remove_auto_add
+    Alter field action_time on logentry
+admin.0003_logentry_add_action_flag_choices
+    Alter field action_flag on logentry
+contenttypes.0002_remove_content_type_name
+    Change Meta options on contenttype
+    Alter field name on contenttype
+    Raw Python operation
+    Remove field name from contenttype
+auth.0002_alter_permission_name_max_length
+    Alter field name on permission
+auth.0003_alter_user_email_max_length
+    Alter field email on user
+auth.0004_alter_user_username_opts
+    Alter field username on user
+auth.0005_alter_user_last_login_null
+    Alter field last_login on user
+auth.0006_require_contenttypes_0002
+auth.0007_alter_validators_add_error_messages
+    Alter field username on user
+auth.0008_alter_user_username_max_length
+    Alter field username on user
+auth.0009_alter_user_last_name_max_length
+    Alter field last_name on user
+auth.0010_alter_group_name_max_length
+    Alter field name on group
+auth.0011_update_proxy_permissions
+    Raw Python operation ->     Update the content_type of prox…
+auth.0012_alter_user_first_name_max_length
+    Alter field first_name on user
+django_summernote.0001_initial
+    Create model Attachment
+django_summernote.0002_update-help_text
+    Alter field name on attachment
+django_summernote.0003_alter_attachment_id
+    Alter field id on attachment
+sessions.0001_initial
+    Create model Session
+sites.0001_initial
+    Create model Site
+sites.0002_alter_domain_unique
+    Alter field domain on site
+socialaccount.0001_initial
+    Create model SocialAccount
+    Create model SocialApp
+    Create model SocialToken
+    Alter unique_together for socialtoken (1 constraint(s))
+    Alter unique_together for socialaccount (1 constraint(s))
+socialaccount.0002_token_max_lengths
+    Alter field uid on socialaccount
+    Alter field client_id on socialapp
+    Alter field key on socialapp
+    Alter field secret on socialapp
+socialaccount.0003_extra_data_default_dict
+    Alter field extra_data on socialaccount
+gitpod /workspace/Portfolio-Project-4 (main) $ python3 manage.py migrate
+Operations to perform:
+  Apply all migrations: Your_Thoughts, account, admin, auth, contenttypes, django_summernote, sessions, sites, socialaccount
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying Your_Thoughts.0001_initial... OK
+  Applying account.0001_initial... OK
+  Applying account.0002_email_max_length... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying django_summernote.0001_initial... OK
+  Applying django_summernote.0002_update-help_text... OK
+  Applying django_summernote.0003_alter_attachment_id... OK
+  Applying sessions.0001_initial... OK
+  Applying sites.0001_initial... OK
+  Applying sites.0002_alter_domain_unique... OK
+  Applying socialaccount.0001_initial... OK
+  Applying socialaccount.0002_token_max_lengths... OK
+  Applying socialaccount.0003_extra_data_default_dict... OK
+```
+
+
 # Part 2 of 2: Stock Template for README.md
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
