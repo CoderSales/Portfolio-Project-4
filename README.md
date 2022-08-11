@@ -412,7 +412,69 @@ Running migrations:
   Applying socialaccount.0003_extra_data_default_dict... OK
 ```
 
+# Sprint Iteration 1: Fix local website
+## PROBLEM STATEMENT:
+    - At this point the remote website was working, but the local version was not.  The remote deployment was a few commits behind.
+## Part 1 of fix: Identify cause of problem:    
+    - So, the first part of the fix was to identify that the DATABASE_URL variable in this if statement:
+    
+    ```
+    if 'DATABASE_URL' in os.environ:
+        DATABASES = {
+            'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        }
+    ```
+    
+    meant that the settings.py file was looking for DATABASE_URL in whatever environment the site was deployed in.
+    - Therefore, when the site was deployed in the heroku environment, because the DATABASE_URL was present as an environment variable,
+      the site content was able to be displayed on the version of the site deployed and running on heroku.
+    - However, when the site was deployed in the GitPod environment, since the DATABASE_URL was not present as an environment variable,
+      the site content was not able to be displayed on the version of the site being run from the local GitPod server.
+## Part 2 of the fix: Add variable to environment
+    - The second part of the fix was to add the DATABASE_URL variable present in the heroku workspace environment variables to the GitPod workspace environment variables.
+    - However, the local site still did not display content.  Therefore, the GitPod workspace was stopped and restarted from the [GitPod Dashboard](https://gitpod.io/dashboard).
+    - This restart fixed the issue aand the content now displayed on local as well.
 
+
+# Sprint Iteration 2: Testing and Fix Content
+## Testing
+### To Check "Like" functionality
+#### Test "Like" functionality.
+Try to like post
+-  Not possible as not logged in
+#### First, login.
+As local environment was stopped in the previous iteration of this sprint, during this iteration, 
+- Then logged in.
+#### Test Like functionality.
+Try to like post.
+Success.
+
+#### Test Add Comment Functionality (Create in CRUD)
+Added comment.
+Clicked Submit Button.
+##### Bug [Resolved]
+Comment did not display on website.
+##### Debug [Resolved]
+Logged in as admin, clicked on Comments.
+Comment present.
+Clicked on Users.
+User not verified.
+Ticked verified box.
+Now comment displays for user.
+[Resolved]
+Detail on fix necessary in code below for comment not displaying:
+# Fix post functionality
+## In the Your_Thoughts App folder:
+### In the views.py post function
+Move the first return statement to after the "if else block" and comment everything in the function that comes afterwards.
+
+### In the urls.py
+#### In urlpatterns
+add post/ to the start of the paths for:
+- slug
+    - render views.PostDetail as view
+- like/slug
+    - render views.PostDetail as view
 # Part 2 of 2: Stock Template for README.md
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)

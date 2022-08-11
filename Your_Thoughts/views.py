@@ -51,7 +51,6 @@ class PostDetail(View):
         else:
             post.likes.add(request.user)
 
-        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
@@ -63,17 +62,18 @@ class PostDetail(View):
         else:
             comment_form = CommentForm()
 
-        return render(
-            request,
-            "post_detail.html",
-            {
-                "post": post,
-                "comments": comments,
-                "liked": liked,
-                "commented": True,
-                "comment_form": CommentForm(),
-            },
-        )
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+        # return render(
+        #     request,
+        #     "post_detail.html",
+        #     {
+        #         "post": post,
+        #         "comments": comments,
+        #         "liked": liked,
+        #         "commented": True,
+        #         "comment_form": CommentForm(),
+        #     },
+        # )
 
 
 class PostLike(View):
