@@ -63,17 +63,6 @@ class PostDetail(View):
             comment_form = CommentForm()
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-        # return render(
-        #     request,
-        #     "post_detail.html",
-        #     {
-        #         "post": post,
-        #         "comments": comments,
-        #         "liked": liked,
-        #         "commented": True,
-        #         "comment_form": CommentForm(),
-        #     },
-        # )
 
 
 class PostLike(View):
