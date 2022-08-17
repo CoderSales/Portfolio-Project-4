@@ -475,6 +475,48 @@ add post/ to the start of the paths for:
     - render views.PostDetail as view
 - like/slug
     - render views.PostDetail as view
+
+
+## Documenting lines of code
+### Overview (of views in Your_Thoughts App)
+There are two main folders in this project.  
+One is called Profile_Project_4 (PP4 Proj).  This is the project folder.
+The other is the Your_Thoughts App (YT App).
+The YT App has admin.py, apps.py forms.py models.py urls.py and view.py
+- The views file has
+    - class PostList(generic.ListView):
+    - class PostDetail(View):
+        - def get(self, request, slug, *args, **kwargs):
+            - return render(request,"post_detail.html",{post, comments, commented, liked, comment_form})
+        - def post(self, request, slug, *args, **kwargs):
+            -         if post.likes.filter(id=self.request.user.id).exists():
+                        liked = True
+    -                 else:
+                        post.likes.add(request.user)
+    -         comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+        else:
+            comment_form = CommentForm()
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+class PostLike(View):
+    def post(self, request, slug, *args, **kwargs):
+        if post.likes.filter(id=request.user.id).exists():
+        else:
+            post.likes.add(request.user)
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+def get_comment(user_request):
+    return render(user_request, 'Your_Thoughts/comment-page.html', context)
+def add_post(user_request):
+    return render(user_request, 'Your_Thoughts/add_post.html', context)
+def edit_post(user_request, post_id):
+    return render(user_request, 'Your_Thoughts/edit_post.html', context)
+def toggle_post(user_request, post_id):
+    return redirect('get_comment')
+def delete_post(user_request, post_id):
+    return redirect('get_comment')
+
+
+
 # Part 2 of 2: Stock Template for README.md
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
