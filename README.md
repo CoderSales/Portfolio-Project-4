@@ -515,7 +515,9 @@ def toggle_post(user_request, post_id):
 def delete_post(user_request, post_id):
     return redirect('get_comment')
 
-
+## Issue found with website
+Currently the site allows a user who is loggged to post a comment.
+However, in order for this comment to be displayed, currently an admin user must access the admin page, go to the User/Comment and approve the comment.  Currently this must be done for each individual comment.
 
 # Part 2 of 2: Stock Template for README.md
 
