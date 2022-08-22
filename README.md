@@ -520,6 +520,12 @@ def delete_post(user_request, post_id):
 Currently the site allows a user who is logged to post a comment.
 However, in order for this comment to be displayed, currently an admin user must access the admin page, go to the User/Comment and approve the comment.  Currently this must be done for each individual comment.
 
+# Testing
+## Run test 
+Check to see if changing from approved=True to approved=False
+allows a user to post an unapproved comment.
+Test failed, so this change was not pushed to version control. 
+
 # References
 - [django debug panel](https://github.com/recamshak/django-debug-panel)
 
