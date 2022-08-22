@@ -517,8 +517,11 @@ def delete_post(user_request, post_id):
 
 ## Issue found with website
 ### Individual Comment approval
-Currently the site allows a user who is loggged to post a comment.
+Currently the site allows a user who is logged to post a comment.
 However, in order for this comment to be displayed, currently an admin user must access the admin page, go to the User/Comment and approve the comment.  Currently this must be done for each individual comment.
+
+# References
+- [django debug panel](https://github.com/recamshak/django-debug-panel)
 
 # Part 2 of 2: Stock Template for README.md
 
