@@ -53,7 +53,6 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'Your_Thoughts',
-    'debug_panel',
 ]
 
 SITE_ID = 1
@@ -79,7 +78,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_panel.middleware.DebugPanelMiddleware',
 ]
 
 ROOT_URLCONF = 'Profile_Project_4.urls'

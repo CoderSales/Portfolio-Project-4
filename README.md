@@ -524,8 +524,31 @@ However, in order for this comment to be displayed, currently an admin user must
 ## Run test 
 Check to see if changing from approved=True to approved=False
 allows a user to post an unapproved comment.
-Test failed, so this change was not pushed to version control. 
-
+Test failed, so this change was not pushed to version control.
+# Error testing django debug toolbar
+Expected: Local server to load site
+Actual: Site not loading received error.
+Traceback from error:
+```
+Traceback (most recent call last):
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 157, in inner_run
+    handler = self.get_handler(*args, **options)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/contrib/staticfiles/management/commands/runserver.py", line 31, in get_handler
+    handler = super().get_handler(*args, **options)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 78, in get_handler
+    return get_internal_wsgi_application()
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/core/servers/basehttp.py", line 49, in get_internal_wsgi_application
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: WSGI application 'Profile_Project_4.wsgi.application' could not be loaded; Error importing module.
+``` 
+Actions:
+Removed recently added code for django debug toolbar. (from INSTALLED_APPS and MIDDLEWARE)
 # References
 - [django debug panel](https://github.com/recamshak/django-debug-panel)
 
