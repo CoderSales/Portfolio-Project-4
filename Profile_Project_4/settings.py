@@ -79,6 +79,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_panel.middleware.DebugPanelMiddleware',
 ]
 
 ROOT_URLCONF = 'Profile_Project_4.urls'
