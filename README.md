@@ -606,13 +606,16 @@ automatically approved, and so appear
 when added by user.
 
 # Debug
-When testing the heroku deployed app,
+When testing the deployed heroku app,
 received an internal server error.
 This was resolved by doing a ```pip install -r requirements.txt```,
 which changed django version from 
 4.1 (which had been displaying when ```django-admin version```
 was run) to 3.2, which was then subsequently updated to
 3.2.15 to address dependabot flagged security vulnerabilities.
+
+# Next sprint
+## 
 # References
 - [django debug panel](https://github.com/recamshak/django-debug-panel)
 - [CSRF_TRUSTED_ORIGINS required in settings.py](https://github.com/catmaid/CATMAID/issues/1781)
