@@ -630,8 +630,9 @@ was run) to 3.2, which was then subsequently updated to
 - [CSRF_TRUSTED_ORIGINS required in settings.py](https://github.com/catmaid/CATMAID/issues/1781)
 - [How to automatically accept comments from authenticated users in django.contrib.comments](https://stackoverflow.com/questions/2553330/how-to-automatically-accept-comments-from-authenticated-users-in-django-contrib)
 - [Heroku giving 500 error with little information + Internal Server Error](https://stackoverflow.com/questions/46021463/heroku-giving-500-error-with-little-information-internal-server-error)
-
-
+- [Forbidden (403) CSRF verification failed. Request aborted. Reason given for failure: Origin checking failed does not match any trusted origins](https://stackoverflow.com/questions/70285834/forbidden-403-csrf-verification-failed-request-aborted-reason-given-for-fail)
+## CRUD References
+- [PP4_masterclass](https://github.com/lechien73/PP4_masterclass/commits/main)
 
 # Part 2 of 2: Stock Template for README.md
 
