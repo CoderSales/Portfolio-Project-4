@@ -593,7 +593,7 @@ ModuleNotFoundError: debug toolbar
 Remove debug_toolbar from urls.py
 # References
 - [django debug panel](https://github.com/recamshak/django-debug-panel)
-
+- [CSRF_TRUSTED_ORIGINS required in settings.py](https://github.com/catmaid/CATMAID/issues/1781)
 
 
 
