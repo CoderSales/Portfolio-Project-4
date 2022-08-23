@@ -615,7 +615,16 @@ was run) to 3.2, which was then subsequently updated to
 3.2.15 to address dependabot flagged security vulnerabilities.
 
 # Next sprint
-## 
+## Testing of CRUD functionality
+- With regard to Comments
+    1. Should allow user to create, read, update and delete comments.
+    2. Should display toasts for crud operations.
+
+
+# Further work
+## The following sprints
+- map django schema
+- try installing test package(s)
 # References
 - [django debug panel](https://github.com/recamshak/django-debug-panel)
 - [CSRF_TRUSTED_ORIGINS required in settings.py](https://github.com/catmaid/CATMAID/issues/1781)
