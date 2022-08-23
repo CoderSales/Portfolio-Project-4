@@ -55,6 +55,11 @@ INSTALLED_APPS = [
     'Your_Thoughts',
 ]
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-coder731-portfolioproje-a6yzai3rtfn.ws-eu62.gitpod.io',
+                        'https://your-thoughts-app.herokuapp.com',
+                        'https://your-thoughts-app.herokuapp.com/',
+]
+
 SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
