@@ -594,6 +594,12 @@ Remove debug_toolbar from urls.py
 
 # End of Sprint
 ## Finished sprint to address issue with comment approval
+### Successful Google search string:
+```why do i need to approve every single comment django project```
+### Result: 
+- [automatically accept comments](https://stackoverflow.com/questions/2553330/how-to-automatically-accept-comments-from-authenticated-users-in-django-contrib)
+
+### Fix:
 Changed False to True in models.py Comments model
 approved field, so that comments are 
 automatically approved, and so appear 
