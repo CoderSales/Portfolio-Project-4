@@ -569,9 +569,14 @@ Check re dependabot security update
 Enable dependabot updates in GitHub settings for repository.
 Check dependabot security update recommendations
 #### Fix 
-Change django version from 3.2 to 3.2.14
+Change django version from 3.2 to 3.2.14 in requirements.txt
 to patch critical vulnerability to sql injection.
-
+### Update
+Per dependabot:
+Django 3.2 before 3.2.15 and 4.0 before 4.0.7 vulnerable to Reflected File Download attack #16
+#### Fix
+Change requirements.txt
+from 3.2.14 to 3.2.15
 ## 2
 Internal server error on heroku
 ran ```heroku logs --app your-thoughts-app```
