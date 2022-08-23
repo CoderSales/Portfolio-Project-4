@@ -615,9 +615,10 @@ was run) to 3.2, which was then subsequently updated to
 3.2.15 to address dependabot flagged security vulnerabilities.
 
 # Next sprint
-## Testing of CRUD functionality
+## Testing of CRUD functionality / Planning post testing
 - With regard to Comments
     1. Should allow user to create, read, update and delete comments.
+        - There should be an edit functionality in the comment. 
     2. Should display toasts for crud operations.
 
 
