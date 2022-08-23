@@ -577,6 +577,9 @@ Django 3.2 before 3.2.15 and 4.0 before 4.0.7 vulnerable to Reflected File Downl
 #### Fix
 Change requirements.txt
 from 3.2.14 to 3.2.15
+### Update
+run
+```pip install  -r requirements.txt```
 ## 2
 Internal server error on heroku
 ran ```heroku logs --app your-thoughts-app```
