@@ -577,6 +577,11 @@ Django 3.2 before 3.2.15 and 4.0 before 4.0.7 vulnerable to Reflected File Downl
 #### Fix
 Change requirements.txt
 from 3.2.14 to 3.2.15
+### Update and fix
+Per dependabot:
+Key confusion through non-blocklisted public key formats #14
+Action taken:
+Update requirements.txt from pyjwt 2.3.0 to 2.4.0
 ### Update
 run
 ```pip install  -r requirements.txt```
