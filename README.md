@@ -591,10 +591,18 @@ ran ```heroku logs --app your-thoughts-app```
 ModuleNotFoundError: debug toolbar
 ### Fix:
 Remove debug_toolbar from urls.py
+
+# End of Sprint
+## Finished sprint to address issue with comment approval
+Changed False to True in models.py Comments model
+approved field, so that comments are 
+automatically approved, and so appear 
+when added by user.
+
 # References
 - [django debug panel](https://github.com/recamshak/django-debug-panel)
 - [CSRF_TRUSTED_ORIGINS required in settings.py](https://github.com/catmaid/CATMAID/issues/1781)
-
+- [How to automatically accept comments from authenticated users in django.contrib.comments](https://stackoverflow.com/questions/2553330/how-to-automatically-accept-comments-from-authenticated-users-in-django-contrib)
 
 
 
