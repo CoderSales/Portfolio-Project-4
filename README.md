@@ -41,7 +41,7 @@ Desktop Home Page ![Desktop Home Page](assets/images/desktop-home-page-compresse
 - Easy to engage
 
 - Problem statement:
-How to develop a blog application that provides this functionality to the useer?
+How to develop a blog application that provides this functionality to the user?
 
 ## Technologies used:
 - [Python](https://www.python.org/)
@@ -549,8 +549,41 @@ django.core.exceptions.ImproperlyConfigured: WSGI application 'Profile_Project_4
 ``` 
 Actions:
 Removed recently added code for django debug toolbar. (from INSTALLED_APPS and MIDDLEWARE)
+
+# Debugging
+## 1
+Unable to login as admin on local
+### Working towards solution
+Check django-admin version
+returned 4.1
+which was unexpected as 3.2 is in requirements.txt
+
+#### Aside
+For Django 4.1 need to add another csrf variable (CSRF_TRUSTED_ORIGINS) to settings.py
+with both the local app url (without trailing forwardslash) and heroku deployed app url (added with and without trailing forwardslash)
+### Fix
+pip install -r requirements.txt
+this reverted to django 3.2
+### Update 
+Check re dependabot security update
+Enable dependabot updates in GitHub settings for repository.
+Check dependabot security update recommendations
+#### Fix 
+Change django version from 3.2 to 3.2.14
+to patch critical vulnerability to sql injection.
+
+## 2
+Internal server error on heroku
+ran ```heroku logs --app your-thoughts-app```
+ModuleNotFoundError: debug toolbar
+### Fix:
+Remove debug_toolbar from urls.py
 # References
 - [django debug panel](https://github.com/recamshak/django-debug-panel)
+
+
+
+
 
 # Part 2 of 2: Stock Template for README.md
 
