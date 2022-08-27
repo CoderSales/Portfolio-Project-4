@@ -634,6 +634,17 @@ was run) to 3.2, which was then subsequently updated to
 - Rolled forward migrations
 - Reinstalled allauth
 
+# Notes on Django theory
+Django uses a specific case of MVC called MVT, Model View Template.
+To write them so that the roles line up vertically would be as follows:
+MVC
+MTV
+In Django the MVC Model is the model
+The MVC "View" (not to be confused with Django's Views) is the html template. (The template is the user interface.)
+The MVC Controller is the View. The views are where the logic lives.
+
+- [ServerSide Web Frameworks Django Structure]
+
 # References
 - [django debug panel](https://github.com/recamshak/django-debug-panel)
 - [CSRF_TRUSTED_ORIGINS required in settings.py](https://github.com/catmaid/CATMAID/issues/1781)
