@@ -626,6 +626,14 @@ was run) to 3.2, which was then subsequently updated to
 ## The following sprints
 - map django schema
 - try installing test package(s)
+
+# Next sprint
+- Rolled back migrations
+- Got an error
+- Uninstalled allauth
+- Rolled forward migrations
+- Reinstalled allauth
+
 # References
 - [django debug panel](https://github.com/recamshak/django-debug-panel)
 - [CSRF_TRUSTED_ORIGINS required in settings.py](https://github.com/catmaid/CATMAID/issues/1781)
