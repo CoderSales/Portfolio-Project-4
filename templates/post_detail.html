@@ -3,6 +3,10 @@
     <div class="masthead">
         <div class="container">
             <div class="row g-0">
+                
+                {%if request.user == post.author %}
+                    <button>Edit</button>
+                {% endif %}
                 <div class="col-md-6 masthead-text">
                     <!-- Post title goes in these h1 tags -->
                     <h1 class="post-title">{{ post.title }}</h1>

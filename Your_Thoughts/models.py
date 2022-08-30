@@ -20,17 +20,17 @@ class Post(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField(default='text')
     featured_image = CloudinaryField('image', default='placeholder')
-    excerpt = models.TextField(blank=True)
+    # excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
-    content = models.TextField()
+    # content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)  # default='author'
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(
         User, related_name='blogpost_likes', blank=True)
 
-    name = models.CharField(max_length=50, null=False, blank=False)
-    comment = models.TextField(null=False, blank=False)
-    done = models.BooleanField(null=False, blank=False, default=False)
+    # name = models.CharField(max_length=50, null=False, blank=False)
+    # comment = models.TextField(null=False, blank=False)
+    # done = models.BooleanField(null=False, blank=False, default=False)
 
     class Meta:
         """

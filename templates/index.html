@@ -4,6 +4,16 @@
 
     <div class="container-fluid">
         <div class="row">
+            <button>
+                <p>
+                    <nav>
+                        asdf
+                    </nav>
+                </p>
+            </button>
+            {% comment %} <a href="{% url 'index2.html' %}" class="post-link"> {% endcomment %}
+            </a>
+
             <!-- Your_Thoughts Entries Column -->
             <div class="col-12 mt-3 left">
                 <div class="row">
@@ -25,7 +35,6 @@
                                         </div>
                                         <a href="{% url 'post_detail' post.slug  %}" class="post-link">
                                             <h2 class="card-title">{{ post.title }}</h2>
-                                            <p class="card-text">{{ post.excerpt }}</p>
                                         </a>
                                         <hr />
                                         <p class="card-text text-muted h6">{{ post.created_on}} <i class="far fa-heart"></i>
