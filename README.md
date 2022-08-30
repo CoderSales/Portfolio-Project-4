@@ -645,6 +645,15 @@ The MVC Controller is the View. The views are where the logic lives.
 
 - [ServerSide Web Frameworks Django Structure]
 
+# Sprint:
+## Plan:
+Make admin functions available to the user.
+### Notes / Thoughts:
+- It will need to check that the current user is the same as the comment author
+    - So this will be something like:
+    	- if user === comment.author
+        - then do some action
+    - Try to implement this now.
 # References
 - [django debug panel](https://github.com/recamshak/django-debug-panel)
 - [CSRF_TRUSTED_ORIGINS required in settings.py](https://github.com/catmaid/CATMAID/issues/1781)
