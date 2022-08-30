@@ -654,6 +654,10 @@ Make admin functions available to the user.
     	- if user === comment.author
         - then do some action
     - Try to implement this now.
+### Progress:
+Noted in views py that class PostEdit (inheriting from Django View):
+- only has a get method
+- no post method.
 # References
 - [django debug panel](https://github.com/recamshak/django-debug-panel)
 - [CSRF_TRUSTED_ORIGINS required in settings.py](https://github.com/catmaid/CATMAID/issues/1781)
