@@ -8,7 +8,7 @@ django-allauth==65.18.0
 django-crispy-forms==2.6
 django-summernote==0.8.20.0
 gunicorn==26.0.0
-oauthlib==3.2.2
+oauthlib==3.3.1
 psycopg2-binary==2.9.12
 PyJWT==2.13.0
 pylint-django==2.5.2
