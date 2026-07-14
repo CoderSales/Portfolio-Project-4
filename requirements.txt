@@ -11,7 +11,7 @@ gunicorn==26.0.0
 oauthlib==3.3.1
 psycopg2-binary==2.9.12
 PyJWT==2.13.0
-pylint-django==2.7.0
+pylint-django==2.8.0
 pylint-plugin-utils==0.9.0
 pylint-quotes==0.2.3
 python3-openid==3.2.0
