@@ -1,4 +1,4 @@
-cloudinary==1.46.3
+cloudinary==1.47.0
 coverage==7.17.2
 asgiref==3.13.0
 dj-database-url==3.1.2
