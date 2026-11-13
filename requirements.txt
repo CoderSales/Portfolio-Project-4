@@ -1,5 +1,5 @@
 cloudinary==1.46.3
-coverage==7.17.0
+coverage==7.17.2
 asgiref==3.13.0
 dj-database-url==3.1.2
 dj3-cloudinary-storage==0.0.6
